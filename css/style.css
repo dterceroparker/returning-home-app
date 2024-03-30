@@ -33,16 +33,24 @@ nav {
 	height: 200px;
 	width: 200px;
 	box-shadow: #93b4e5d8 -95px -35px 0 -5px, #93b4e5d8 25px -45px, #93b4e5d8 30px 40px, #93b4e5d8 -80px 45px 0 -10px, #93b4e5d8 105px 5px 0 -5px;
+  filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
 }
 h1 {
 	font-family: "Cedarville Cursive", cursive;
 	font-weight: 400;
+  font-size: 25px;
 	font-style: oblique;
+  margin-top: 50px;
+  margin-left: -60px;
+  color: #08160ec9;
 }
 #day-night-mode {
+  width: 10em;
+  height: 10em;
 	cursor: pointer;
 	border-radius: 1000px;
-	color: #09080c9f;
+  filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
+	color: #201c2c74;
 	background: hsla(39, 100%, 71%, 1);
 	background: linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
 	background: -moz-linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
@@ -51,6 +59,9 @@ h1 {
 }
 .meditation {
 	margin: 10px 10px 10px 10px;
+  filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
+  border-radius: 20px;
+
 }
 .landing-container {
   display: flex;
@@ -62,38 +73,62 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.447);
   font-size: 20px;
   width: 250px;
   padding: 10px;
+  border-radius: 20px;
+  
+}
+#support-button {
+  width: 30em;
+  height: 2em;
+	cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.447);
+  border-radius: 20px;
 }
 .choice-container {
   display: flex;
-	flex-direction: column;
-  align-items: center;
-  margin-top: 16px;
+  flex-direction: row
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px;
+  background-color: #ff01bb;
 }
-.support-options-section {
-	width: 40%;
-	justify-content: space-around;
+button {
+  width: 10em;
+  height: 10em;
+	cursor: pointer;
+	border-radius: 1000px;
+  filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
+	color: #201c2cae;
 }
 .quote-container {
   display: flex;
-	flex-direction: column;
+	/* flex-direction: column; */
   align-items: center;
   margin-top: 16px;
+  background-color: aquamarine;
 }
 .next .other .home {
-	width: 40%;
-  justify-content: space;
+	width: 60px;
+  justify-content: space-between;
 }
 .sources-well {
+  background-color: rgb(248, 13, 13);
 	display: flex;
 	flex-direction: column;
+  justify-content: space-between;
   align-items: flex-end;
+  height: 30px;
+  border-top: 3px solid #322e3216;
 }
 .pentagon {
+
 	position: absolute;
+  /* display: flex; */
+	flex-direction: column;
+  align-items: flex-end;
 	width: 54px;
 	border-width: 50px 18px 0;
 	border-style: solid;
