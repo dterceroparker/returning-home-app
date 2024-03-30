@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+body {
+  display: flex;
+  flex-direction: column;
+	background-color: #aeb8fe;
+	margin: 0;
+}
+@media screen and (min-width:480px) {
+  .column {
+    width: 50%;
+    display: table-cell;
+    padding: .5em;
+  }
+}
+nav {
+	display: flex;
+  flex-direction: column;
+}
+body.day-theme {
+  background-color: #aeb8fe;
+}
+body.night-theme {
+  background-color: #332761d6;
+  color: rgba(255, 255, 255, 0.384)smoke
+}
+/* .cloud-container {
+  grid-column: 1 / span 1;
+  grid-row: 1;
+  background-color: #aeb8fe;
+  position: relative;
+} */
+.cloud {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%; left: 50%;
+  margin-top: -30px;
+  margin-left: -30px;
+  background: #FFFFFF;
+  height: 200px; 
+  width: 200px;
+  box-shadow:
+  #FFFFFF -95px -35px 0 -5px, 
+  #FFFFFF 25px -45px, 
+  #FFFFFF 30px 40px, 
+  #FFFFFF -80px 45px 0 -10px, 
+  #FFFFFF 105px 5px 0 -5px;
+}
+
+
+h1 {
+	font-family: "Cedarville Cursive", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* .theme {
+  grid-column: 2;
+  grid-row: 1 / span 1;
+  place-items: center;
+  background-color: aquamarine;
+  height: 200px;
+} */
+.meditation-image {
+	/* grid-column-start: 3;
+	grid-row-start: 1;
+	float: right; */
+  grid-column: 3 / span 1;
+  grid-row: 1;
+  background-color: aqua;
+  height: 200px;
+	/* margin-right: 0px;
+	object-position: right top;
+	border-radius: 8px;
+	border: 2px solid paleturquoise;
+	padding: 5px; */
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+	white-space: nowrap;
+	color: rgba(231, 166, 213, 0.596);
+	font-size: 20px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+#quote-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 250px;
+  padding: 10px;
+}
+
+.pentagon {
+  position: absolute;
+  width: 54px;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: #01ff70 transparent;
+}
+.pentagon:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent #01ff70;
+}
+.mid1 {
+  background-color: bisque;
+}
+.mid2 {
+  background-color: rgb(110, 80, 232);
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(124, 210, 151);
+  color: white;
+  text-align: center;
+}
+
