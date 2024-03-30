@@ -119,10 +119,8 @@ button {
 }
 #sources-well {
   background-color: rgb(248, 13, 13);
-	/* display: flex;
-	flex-direction: grid;
+	display: flex;
   justify-content: flex-end;
-  align-items: flex-end; */
   height: 30px;
   border-top: 3px solid #322e3216;
 }
