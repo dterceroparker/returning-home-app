@@ -3,7 +3,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	background-color: #aeb8fe;
+  color: black;
 	margin: 0;
+}
+body.night-mode {
+  background-color: #310bf07e;
+  color: whitesmoke;
 }
 @media screen and (min-width:480px) {
 	.column {
@@ -25,7 +30,7 @@ nav {
 	align-items: center;
 	/* align-content: flex-start; */
 	/* gap: 30px; */
-	border-bottom: 3px solid #322e3216;
+  box-shadow: 5px 3px 10px rgba(128, 128, 128, 0.488);
 }
 .cloud {
 	border-radius: 50%;
@@ -79,7 +84,8 @@ h1 {
 	flex-direction: column;
   align-items: center;
   margin-top: 16px;
-}
+} 
+
 p {
   display: flex;
   flex-direction: column;
@@ -98,7 +104,7 @@ p {
   border-radius: 20px;
 }
 .support-options-section {
-  width: 50%
+  width: 50%;
   background-color: green;
   align-self: center;
 }
@@ -144,7 +150,7 @@ button {
   height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: center
+  justify-content: center;
   border-top: 3px solid #322e3216;
 }
 .pentagon{

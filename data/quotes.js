@@ -63,3 +63,17 @@ const impostorSyndromeQuotes = [
     quote: "Kings and philosophers shit [...]. ~ Michel de Montaigne"
   }
 ]
+
+
+function getRandomComparisonQuote() {
+  return comparisonQuotes[Math.floor(Math.random() * comparisonQuotes.length)]
+}
+
+function getRandomImpostorSyndromeQuote() {
+  return impostorSyndromeQuotes[Math.floor(Math.random() * impostorSyndromeQuotes.length)]
+}
+
+export {
+  getRandomComparisonQuote, getRandomImpostorSyndromeQuote
+}
+

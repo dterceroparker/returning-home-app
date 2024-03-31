@@ -1,5 +1,5 @@
 /*-------------------------------- Constants --------------------------------*/
-import { getRandomQuote } from "../data/quotes"
+import { getRandomComparisonQuote, getRandomImpostorSyndromeQuote } from "../data/quotes.js"
 
 
 /*-------------------------------- Variables --------------------------------*/
@@ -11,37 +11,44 @@ const selfLoveQuotes = []
 
 /*------------------------ Cached Element References ------------------------*/
 //light dark mode
-const dayNightBtn = document.getElementById('day-night-mode')
-const landingContainer = document.querySelector('.landing-container')
-const supportBtn = document.getElementById('support-button')
-const choiceContainer = document.querySelector('.choice-container')
-const quoteContainer = document.querySelector('.quote-container')
+const dayNightBtn = document.getElementById("day-night-mode")
+
+const landingContainer = document.querySelector(".landing-container")
+const supportBtn = document.getElementById("support-button")
+const choiceContainer = document.querySelector(".choice-container")
+const quoteContainer = document.querySelector(".quote-container")
 
 /*----------------------------- Event Listeners -----------------------------*/
 dayNightBtn.addEventListener('click', () => {
-  document.body.classList.toggle('night-theme')
+  document.body.classList.toggle("night-mode");
+  //classList property can be modified using toggle() method
+  console.log("night-mode")
 })
-supportBtn.addEventListener('click', )
+supportBtn.addEventListener("click", reflectChoiceContainer)
 
 /*-------------------------------- Functions --------------------------------*/
-
-
-
-//function to handle supportBtn
-function handleSupportBtn() {
-
-}
-
+//day night mode function per shake-it-off lesson
 
 
 init();
 
 function init() {
   landingContainer.style.display = ''
-  supportBtn.style.display = 'none'
+  supportBtn.style.display = ''
   choiceContainer.style.display = 'none'
   quoteContainer.style.display = 'none'
-} console.log("hello")
+} 
+
+function reflectChoiceContainer() {
+  landingContainer.style.display = "none"
+  supportBtn.style.display = "none"
+  choiceContainer.style.display = ""
+  quoteContainer.style.display = "none"
+  }
+  
+
+
+
 
 function render() {
   if (appOpens) {
