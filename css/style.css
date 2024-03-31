@@ -15,14 +15,13 @@ body {
 nav {
 	display: flex;
 	/* flex-direction: column; */
-  justify-content: end;
+  justify-content: space-around;
   gap: 30px;
-  position: relative
+  position: relative;
   height: 150px;
   padding: 15px;
 	/* justify-content: space-between; */
-	/* align-items: center;
-	flex-wrap: wrap; */
+	align-items: center;
 	/* align-content: flex-start; */
 	/* gap: 30px; */
 	border-bottom: 3px solid #322e3216;
@@ -30,7 +29,7 @@ nav {
 .cloud {
 	border-radius: 50%;
 	position: absolute; 
-	top: 15%;
+	top: 30%;
 	left: 0%;
 	margin-top: -5px;
 	margin-left: 100px;
@@ -50,13 +49,14 @@ h1 {
   color: #08160ec9;
 }
 #day-night-mode {
-  width: 10em;
-  height: 10em;
+  position: absolute;
+  width: 5em;
+  height: auto;
 	cursor: pointer;
 	border-radius: 1000px;
   align-items: center;
   filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
-	color: #201c2c74;
+	color: #201c2cdf;
 	background: hsla(39, 100%, 71%, 1);
 	background: linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
 	background: -moz-linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
@@ -64,10 +64,13 @@ h1 {
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFCB6B", endColorstr="#3D8BFF", GradientType=1);
 }
 .meditation {
+  position: absolute;
+  right: 16px;
+  font-size: 18px;
 	margin: 10px 10px 10px 10px;
   filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
   border-radius: 20px;
-  width: 245px;
+  width: 255px;
   height: auto;
 }
 .landing-container {
@@ -105,7 +108,7 @@ p {
   justify-content: center;
   align-content: center;
   margin: 15px;
-  background-color: #ff01bb;
+  /* background-color: #ff01bb; */
 }
 button {
   width: 10em;
@@ -118,9 +121,10 @@ button {
 .quote-container {
   display: flex;
 	flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-top: 16px;
+  margin-bottom: 15px;;
   background-color: aquamarine;
 }
 .next .other .home {
@@ -131,7 +135,7 @@ button {
   border-radius: 20px;
 }
 #sources-well {
-  background-color: rgb(248, 13, 13);
+  /* background-color: rgb(248, 13, 13); */
   position: relative;
   align-self: center;
   justify-content: center;
@@ -175,5 +179,6 @@ h3 {
 }
 .wisdom-source {
   text-align: center;
+  color:#310bf0
 }
 
