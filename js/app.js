@@ -1,20 +1,21 @@
 /*-------------------------------- Constants --------------------------------*/
-
+import { getRandomQuote } from "../data/quotes"
 
 
 /*-------------------------------- Variables --------------------------------*/
-
+const comparisonQuotes = []
+const impostorSyndromeQuotes = []
+const acceptanceQuotes = []
+const selfLoveQuotes = []
 
 
 /*------------------------ Cached Element References ------------------------*/
 //light dark mode
-const dayNightBtn = document.getElementById('day-night-theme')
+const dayNightBtn = document.getElementById('day-night-mode')
 const landingContainer = document.querySelector('.landing-container')
 const supportBtn = document.getElementById('support-button')
 const choiceContainer = document.querySelector('.choice-container')
 const quoteContainer = document.querySelector('.quote-container')
-
-console.log(supportBtn)
 
 /*----------------------------- Event Listeners -----------------------------*/
 dayNightBtn.addEventListener('click', () => {
@@ -26,7 +27,10 @@ supportBtn.addEventListener('click', )
 
 
 
+//function to handle supportBtn
+function handleSupportBtn() {
 
+}
 
 
 
@@ -37,7 +41,7 @@ function init() {
   supportBtn.style.display = 'none'
   choiceContainer.style.display = 'none'
   quoteContainer.style.display = 'none'
-}
+} console.log("hello")
 
 function render() {
   if (appOpens) {
