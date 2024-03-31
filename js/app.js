@@ -18,7 +18,15 @@ const supportBtn = document.getElementById("support-button")
 const choiceContainer = document.querySelector(".choice-container")
 const quoteContainer = document.querySelector(".quote-container")
 
+
 const comparisonBtn = document.getElementById("comparison")
+const impostorSyndromeBtn = document.getElementById("impostor-syndrome")
+
+const nextBtn = document.getElementById("next")
+const otherBtn = document.getElementById("other")
+const homeBtn = document.getElementById("home")
+
+const supportCategory = 
 /*----------------------------- Event Listeners -----------------------------*/
 dayNightBtn.addEventListener('click', () => {
   document.body.classList.toggle("night-mode");
@@ -26,7 +34,11 @@ dayNightBtn.addEventListener('click', () => {
   console.log("night-mode")
 })
 supportBtn.addEventListener("click", reflectChoiceContainer)
+otherBtn.addEventListener("click", reflectChoiceContainer)
 comparisonBtn.addEventListener("click", randomComparisonQuote)
+impostorSyndromeBtn.addEventListener("click", randomImpostorSyndromeQuote)
+homeBtn.addEventListener("click", init)
+// nextBtn.addEventListener("click", )
 
 /*-------------------------------- Functions --------------------------------*/
 //day night mode function per shake-it-off lesson
@@ -39,16 +51,21 @@ function init() {
   supportBtn.style.display = ''
   choiceContainer.style.display = 'none'
   quoteContainer.style.display = 'none'
+  nextBtn.style.display = "none"
+  otherBtn.style.display = "none"
+  homeBtn.style.display = "none"
 } 
 
-// supportBtn is clicked -> choiceContainer appears
+// supportBtn & otherBtn is clicked -> choiceContainer appears
 function reflectChoiceContainer() {
   landingContainer.style.display = "none"
   supportBtn.style.display = "none"
   choiceContainer.style.display = ""
   quoteContainer.style.display = "none"
+  nextBtn.style.display = "none"
+  otherBtn.style.display = "none"
+  homeBtn.style.display = "none"
   }
-  
 
 //comparison quote rendered 
 function randomComparisonQuote() {
@@ -56,11 +73,31 @@ function randomComparisonQuote() {
   supportBtn.style.display = "none"
   choiceContainer.style.display = "none"
   quoteContainer.style.display = ""
+  nextBtn.style.display = ""
+  otherBtn.style.display = ""
+  homeBtn.style.display = ""
   quoteContainer.textContent = getRandomComparisonQuote().quote
-
 }
 
+//impostor syndrome quote rendered
+function randomImpostorSyndromeQuote () {
+  landingContainer.style.display = "none"
+  supportBtn.style.display = "none"
+  choiceContainer.style.display = "none"
+  quoteContainer.style.display = ""
+  nextBtn.style.display = ""
+  otherBtn.style.display = ""
+  homeBtn.style.display = ""
+  quoteContainer.textContent = getRandomImpostorSyndromeQuote().quote
+}
 
+// next  function that when clicked, renders next random car dependent on current state category
+// function handleNextQuote() {
+//   if (evt.target.classList === "comparison") {
+//     getRandomComparisonQuote().quote
+//   } else if 
+
+// }
 
 // - **Render a game in the browser**. You may not use Canvas or jQuery.
 // - **Include win/loss logic and render win/loss messages in HTML.**
