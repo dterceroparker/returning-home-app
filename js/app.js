@@ -18,6 +18,7 @@ const supportBtn = document.getElementById("support-button")
 const choiceContainer = document.querySelector(".choice-container")
 const quoteContainer = document.querySelector(".quote-container")
 
+const comparisonBtn = document.getElementById("comparison")
 /*----------------------------- Event Listeners -----------------------------*/
 dayNightBtn.addEventListener('click', () => {
   document.body.classList.toggle("night-mode");
@@ -25,6 +26,7 @@ dayNightBtn.addEventListener('click', () => {
   console.log("night-mode")
 })
 supportBtn.addEventListener("click", reflectChoiceContainer)
+comparisonBtn.addEventListener("click", randomComparisonQuote)
 
 /*-------------------------------- Functions --------------------------------*/
 //day night mode function per shake-it-off lesson
@@ -39,6 +41,7 @@ function init() {
   quoteContainer.style.display = 'none'
 } 
 
+// supportBtn is clicked -> choiceContainer appears
 function reflectChoiceContainer() {
   landingContainer.style.display = "none"
   supportBtn.style.display = "none"
@@ -47,17 +50,17 @@ function reflectChoiceContainer() {
   }
   
 
+//comparison quote rendered 
+function randomComparisonQuote() {
+  landingContainer.style.display = "none"
+  supportBtn.style.display = "none"
+  choiceContainer.style.display = "none"
+  quoteContainer.style.display = ""
+  quoteContainer.textContent = getRandomComparisonQuote().quote
 
-
-
-function render() {
-  if (appOpens) {
-  landingContainer.style.display = ''
-  supportBtn.style.display = 'none'
-  choiceContainer.style.display = 'none'
-  quoteContainer.style.display = 'none' 
-  }
 }
+
+
 
 // - **Render a game in the browser**. You may not use Canvas or jQuery.
 // - **Include win/loss logic and render win/loss messages in HTML.**
