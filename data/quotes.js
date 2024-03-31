@@ -19,7 +19,7 @@ const impostorSyndromeQuotes = [
   },
   {
     quote: 'Making a leap of faith around what other people are really like helps us to humanize the world. ~ School of Life' 
-  }
+  },
   {
     quote: "It means that whenever we encounter a stranger we're not really encountering a stranger, we're in fact encountering someone who is - in spite of the surface evidence to the contrary - in basic ways very much like us - and that therefore nothing fundamental stands between us and the possibility of responsibility, success and fulfillment. ~ School of Life"
   },
