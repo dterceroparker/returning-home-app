@@ -15,18 +15,23 @@ body {
 nav {
 	display: flex;
 	/* flex-direction: column; */
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
+  justify-content: end;
+  gap: 30px;
+  position: relative
+  height: 150px;
+  padding: 15px;
+	/* justify-content: space-between; */
+	/* align-items: center;
+	flex-wrap: wrap; */
 	/* align-content: flex-start; */
 	/* gap: 30px; */
 	border-bottom: 3px solid #322e3216;
 }
 .cloud {
 	border-radius: 50%;
-	/* position: absolute;  */
-	top: 50%;
-	left: 50%;
+	position: absolute; 
+	top: 15%;
+	left: 0%;
 	margin-top: -5px;
 	margin-left: 100px;
 	background: #93b4e5d8;
@@ -49,6 +54,7 @@ h1 {
   height: 10em;
 	cursor: pointer;
 	border-radius: 1000px;
+  align-items: center;
   filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
 	color: #201c2c74;
 	background: hsla(39, 100%, 71%, 1);
@@ -61,7 +67,8 @@ h1 {
 	margin: 10px 10px 10px 10px;
   filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
   border-radius: 20px;
-
+  width: 245px;
+  height: auto;
 }
 .landing-container {
   display: flex;
@@ -78,7 +85,6 @@ p {
   width: 250px;
   padding: 10px;
   border-radius: 20px;
-  
 }
 #support-button {
   width: 30em;
@@ -87,11 +93,17 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.447);
   border-radius: 20px;
 }
+.support-options-section {
+  width: 50%
+  background-color: green;
+  align-self: center;
+}
 .choice-container {
   display: flex;
-  flex-direction: row
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   justify-content: center;
+  align-content: center;
   margin: 15px;
   background-color: #ff01bb;
 }
@@ -105,7 +117,8 @@ button {
 }
 .quote-container {
   display: flex;
-	/* flex-direction: column; */
+	flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-top: 16px;
   background-color: aquamarine;
@@ -119,14 +132,19 @@ button {
 }
 #sources-well {
   background-color: rgb(248, 13, 13);
-	display: flex;
-  justify-content: flex-end;
-  height: 30px;
+  position: relative;
+  align-self: center;
+  justify-content: center;
+  width: 50%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
   border-top: 3px solid #322e3216;
 }
 .pentagon{
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 0;
@@ -145,5 +163,17 @@ button {
   border-right: 180px solid transparent;
   bottom: 180px;
   left: -90px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+h3 {
+  text-align: center;
+}
+.wisdom-source {
+  text-align: center;
 }
 
