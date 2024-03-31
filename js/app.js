@@ -7,7 +7,8 @@ const comparisonQuotes = []
 const impostorSyndromeQuotes = []
 const acceptanceQuotes = []
 const selfLoveQuotes = []
-
+// variable used to store support category user clicks
+let supportCategory = ""
 
 /*------------------------ Cached Element References ------------------------*/
 //light dark mode
@@ -21,12 +22,12 @@ const quoteContainer = document.querySelector(".quote-container")
 
 const comparisonBtn = document.getElementById("comparison")
 const impostorSyndromeBtn = document.getElementById("impostor-syndrome")
-
+const quoteText = document.getElementById("quote")
 const nextBtn = document.getElementById("next")
 const otherBtn = document.getElementById("other")
 const homeBtn = document.getElementById("home")
 
-const supportCategory = 
+
 /*----------------------------- Event Listeners -----------------------------*/
 dayNightBtn.addEventListener('click', () => {
   document.body.classList.toggle("night-mode");
@@ -38,22 +39,36 @@ otherBtn.addEventListener("click", reflectChoiceContainer)
 comparisonBtn.addEventListener("click", randomComparisonQuote)
 impostorSyndromeBtn.addEventListener("click", randomImpostorSyndromeQuote)
 homeBtn.addEventListener("click", init)
+nextBtn.addEventListener("click", handleSupportCategory)
 // nextBtn.addEventListener("click", )
 
 /*-------------------------------- Functions --------------------------------*/
 //day night mode function per shake-it-off lesson
 
+function handleSupportCategory() {
+console.log(supportCategory)
+ switch (supportCategory) {
+  case "comparison":
+    randomComparisonQuote();
+    break;
+  case "impostor syndrome": 
+    randomImpostorSyndromeQuote()
+    break;
+    default:
+    init() 
+ }
+}
 
 init();
 
 function init() {
-  landingContainer.style.display = ''
-  supportBtn.style.display = ''
+  landingContainer.style.display = ""
+  supportBtn.style.display = ""
   choiceContainer.style.display = 'none'
   quoteContainer.style.display = 'none'
-  nextBtn.style.display = "none"
-  otherBtn.style.display = "none"
-  homeBtn.style.display = "none"
+  // nextBtn.style.display = "none"
+  // otherBtn.style.display = "none"
+  // homeBtn.style.display = "none"
 } 
 
 // supportBtn & otherBtn is clicked -> choiceContainer appears
@@ -62,9 +77,9 @@ function reflectChoiceContainer() {
   supportBtn.style.display = "none"
   choiceContainer.style.display = ""
   quoteContainer.style.display = "none"
-  nextBtn.style.display = "none"
-  otherBtn.style.display = "none"
-  homeBtn.style.display = "none"
+  // nextBtn.style.display = "none"
+  // otherBtn.style.display = "none"
+  // homeBtn.style.display = "none"
   }
 
 //comparison quote rendered 
@@ -73,10 +88,12 @@ function randomComparisonQuote() {
   supportBtn.style.display = "none"
   choiceContainer.style.display = "none"
   quoteContainer.style.display = ""
-  nextBtn.style.display = ""
-  otherBtn.style.display = ""
-  homeBtn.style.display = ""
-  quoteContainer.textContent = getRandomComparisonQuote().quote
+  // nextBtn.style.display = ""
+  // otherBtn.style.display = ""
+  // homeBtn.style.display = ""
+  supportCategory = "comparison"
+  console.log(supportCategory)
+  quoteText.textContent = getRandomComparisonQuote().quote
 }
 
 //impostor syndrome quote rendered
@@ -85,10 +102,12 @@ function randomImpostorSyndromeQuote () {
   supportBtn.style.display = "none"
   choiceContainer.style.display = "none"
   quoteContainer.style.display = ""
-  nextBtn.style.display = ""
-  otherBtn.style.display = ""
-  homeBtn.style.display = ""
-  quoteContainer.textContent = getRandomImpostorSyndromeQuote().quote
+  // nextBtn.style.display = ""
+  // otherBtn.style.display = ""
+  // homeBtn.style.display = ""
+  supportCategory = "impostor syndrome"
+  console.log(supportCategory)
+  quoteText.textContent = getRandomImpostorSyndromeQuote().quote
 }
 
 // next  function that when clicked, renders next random car dependent on current state category

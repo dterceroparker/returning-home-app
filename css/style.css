@@ -87,9 +87,7 @@ h1 {
 } 
 
 p {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 400px;
   border: 1px solid rgba(0, 0, 0, 0.447);
   font-size: 20px;
   width: 250px;
@@ -125,7 +123,7 @@ button {
   filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
 	color: #201c2cae;
 }
-.quote-container, p {
+.quote-container {
   display: flex;
 	flex-direction: column;
   align-items: center;
@@ -134,7 +132,7 @@ button {
   margin-bottom: 15px;;
   background-color: aquamarine;
 }
-.next-other-home {
+#next, #other, #home {
   width: 30em;
   height: 2em;
 	cursor: pointer;
