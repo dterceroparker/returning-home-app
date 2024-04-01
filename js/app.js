@@ -1,5 +1,5 @@
 /*-------------------------------- Constants --------------------------------*/
-import { getRandomComparisonQuote, getRandomImpostorSyndromeQuote } from "../data/quotes.js"
+import { getRandomComparisonQuote, getRandomImpostorSyndromeQuote, getRandomAcceptanceQuote, getRandomSelfLoveQuote } from "../data/quotes.js"
 
 
 /*-------------------------------- Variables --------------------------------*/
@@ -22,10 +22,14 @@ const quoteContainer = document.querySelector(".quote-container")
 
 const comparisonBtn = document.getElementById("comparison")
 const impostorSyndromeBtn = document.getElementById("impostor-syndrome")
-const quoteText = document.getElementById("quote")
+const acceptanceBtn = document.getElementById("acceptance")
+const selfLoveBtn = document.getElementById("self-love")
+
 const nextBtn = document.getElementById("next")
 const otherBtn = document.getElementById("other")
 const homeBtn = document.getElementById("home")
+
+const quoteText = document.getElementById("quote")
 
 
 /*----------------------------- Event Listeners -----------------------------*/
@@ -34,13 +38,17 @@ dayNightBtn.addEventListener('click', () => {
   //classList property can be modified using toggle() method
   console.log("night-mode")
 })
+
 supportBtn.addEventListener("click", reflectChoiceContainer)
+
+nextBtn.addEventListener("click", handleSupportCategory)
 otherBtn.addEventListener("click", reflectChoiceContainer)
+homeBtn.addEventListener("click", init)
+
 comparisonBtn.addEventListener("click", randomComparisonQuote)
 impostorSyndromeBtn.addEventListener("click", randomImpostorSyndromeQuote)
-homeBtn.addEventListener("click", init)
-nextBtn.addEventListener("click", handleSupportCategory)
-// nextBtn.addEventListener("click", )
+acceptanceBtn.addEventListener("click", randomAcceptanceQuote)
+selfLoveBtn.addEventListener("click", randomSelfLoveQuote)
 
 /*-------------------------------- Functions --------------------------------*/
 //day night mode function per shake-it-off lesson
@@ -53,6 +61,12 @@ console.log(supportCategory)
     break;
   case "impostor syndrome": 
     randomImpostorSyndromeQuote()
+    break;
+  case "acceptance":
+    randomAcceptanceQuote()
+    break;
+  case "self love":
+    randomSelfLoveQuote()
     break;
     default:
     init() 
@@ -97,7 +111,7 @@ function randomComparisonQuote() {
 }
 
 //impostor syndrome quote rendered
-function randomImpostorSyndromeQuote () {
+function randomImpostorSyndromeQuote() {
   landingContainer.style.display = "none"
   supportBtn.style.display = "none"
   choiceContainer.style.display = "none"
@@ -110,13 +124,27 @@ function randomImpostorSyndromeQuote () {
   quoteText.textContent = getRandomImpostorSyndromeQuote().quote
 }
 
-// next  function that when clicked, renders next random car dependent on current state category
-// function handleNextQuote() {
-//   if (evt.target.classList === "comparison") {
-//     getRandomComparisonQuote().quote
-//   } else if 
+function randomAcceptanceQuote() {
+  landingContainer.style.display = "none"
+  supportBtn.style.display = "none"
+  choiceContainer.style.display = "none"
+  quoteContainer.style.display = ""
+  supportCategory = "acceptance"
+  console.log(supportCategory)
+  quoteText.textContent = getRandomAcceptanceQuote().quote
+}
 
-// }
+function randomSelfLoveQuote() {
+  landingContainer.style.display = "none"
+  supportBtn.style.display = "none"
+  choiceContainer.style.display = "none"
+  quoteContainer.style.display = ""
+  supportCategory = "self love"
+  console.log(supportCategory)
+  quoteText.textContent = getRandomSelfLoveQuote().quote
+}
+
+
 
 // - **Render a game in the browser**. You may not use Canvas or jQuery.
 // - **Include win/loss logic and render win/loss messages in HTML.**

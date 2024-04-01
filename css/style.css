@@ -7,8 +7,9 @@ body {
 	margin: 0;
 }
 body.night-mode {
-  background-color: #310bf07e;
-  color: whitesmoke;
+  background-color: #1f1b24;
+  overlay: 24dp;
+  color: #ab47bc;
 }
 @media screen and (min-width:480px) {
 	.column {
@@ -103,7 +104,6 @@ p {
 }
 .support-options-section {
   width: 50%;
-  background-color: green;
   align-self: center;
 }
 .choice-container {
@@ -129,8 +129,7 @@ button {
   align-items: center;
   justify-content: center;
   margin-top: 16px;
-  margin-bottom: 15px;;
-  background-color: aquamarine;
+  margin-bottom: 15px;
 }
 #next, #other, #home {
   width: 30em;
@@ -140,7 +139,6 @@ button {
   border-radius: 20px;
 }
 #sources-well {
-  /* background-color: rgb(248, 13, 13); */
   position: relative;
   align-self: center;
   justify-content: center;
