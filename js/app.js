@@ -10,6 +10,8 @@ const selfLoveQuotes = []
 // variable used to store support category user clicks
 let supportCategory = ""
 
+const riverSound = new Audio('../assets/audio/river.wav')
+
 /*------------------------ Cached Element References ------------------------*/
 //light dark mode
 const dayNightBtn = document.getElementById("day-night-mode")
@@ -55,7 +57,7 @@ selfLoveBtn.addEventListener("click", randomSelfLoveQuote)
 
 function handleSupportCategory() {
 console.log(supportCategory)
- switch (supportCategory) {
+  switch (supportCategory) {
   case "comparison":
     randomComparisonQuote();
     break;
@@ -70,7 +72,7 @@ console.log(supportCategory)
     break;
     default:
     init() 
- }
+  }
 }
 
 init();
@@ -94,6 +96,7 @@ function reflectChoiceContainer() {
   // nextBtn.style.display = "none"
   // otherBtn.style.display = "none"
   // homeBtn.style.display = "none"
+  riverSound.play(2000)
   }
 
 //comparison quote rendered 
