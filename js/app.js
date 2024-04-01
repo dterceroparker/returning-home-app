@@ -16,6 +16,9 @@ const riverSound = new Audio('../assets/audio/river.wav')
 //light dark mode
 const dayNightBtn = document.getElementById("day-night-mode")
 
+const breathingBtn = document.getElementById("exit-breathing-button")
+const focusedBreathing = document.getElementById("focused-breathing")
+
 const landingContainer = document.querySelector(".landing-container")
 const supportBtn = document.getElementById("support-button")
 const choiceContainer = document.querySelector(".choice-container")
@@ -33,7 +36,7 @@ const homeBtn = document.getElementById("home")
 
 const quoteText = document.getElementById("quote")
 
-const focusedBreathing = document.getElementById("focused-breathing")
+
 /*----------------------------- Event Listeners -----------------------------*/
 dayNightBtn.addEventListener('click', () => {
   document.body.classList.toggle("night-mode");
@@ -41,11 +44,13 @@ dayNightBtn.addEventListener('click', () => {
   console.log("night-mode")
 })
 
+breathingBtn.addEventListener("click", reflectLandingContainer)
+
 supportBtn.addEventListener("click", reflectChoiceContainer)
 
 nextBtn.addEventListener("click", handleSupportCategory)
 otherBtn.addEventListener("click", reflectChoiceContainer)
-homeBtn.addEventListener("click", init)
+homeBtn.addEventListener("click", reflectLandingContainer)
 
 comparisonBtn.addEventListener("click", randomComparisonQuote)
 impostorSyndromeBtn.addEventListener("click", randomImpostorSyndromeQuote)
@@ -71,7 +76,7 @@ console.log(supportCategory)
     randomSelfLoveQuote()
     break;
     default:
-    init() 
+    reflectLandingContainer() 
   }
 }
 
@@ -87,6 +92,14 @@ function init() {
   // otherBtn.style.display = "none"
   // homeBtn.style.display = "none"
 } 
+
+function reflectLandingContainer() {
+  focusedBreathing.style.display = "none"
+  landingContainer.style.display = ""
+  supportBtn.style.display = ""
+  choiceContainer.style.display = "none"
+  quoteContainer.style.display = "none"
+}
 
 // supportBtn & otherBtn is clicked -> choiceContainer appears
 function reflectChoiceContainer() {

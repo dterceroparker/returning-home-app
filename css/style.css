@@ -92,8 +92,6 @@ h1 {
   width: 140px; 
 }
 #focused-breathing {
-  /* animation: breath var(--timing) ease infinite none running */
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,6 +101,14 @@ h1 {
   border-radius: calc( var(--small) / 2);
   display: inline-block;
   animation: breath 8s ease infinite none running
+}
+#exit-breathing-button {
+  position: absolute;
+  width: 10em;
+  height: auto;
+	cursor: pointer;
+	border-radius: 1000px;
+  align-items: center;
 }
 @keyframes breath {
   25%, 50% {
