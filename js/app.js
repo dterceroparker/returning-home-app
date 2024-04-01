@@ -33,7 +33,7 @@ const homeBtn = document.getElementById("home")
 
 const quoteText = document.getElementById("quote")
 
-getComputedStyle(document.documentElement).getPropertyValue('--timing')
+const focusedBreathing = getComputedStyle(document.documentElement).getPropertyValue('--timing')
 /*----------------------------- Event Listeners -----------------------------*/
 dayNightBtn.addEventListener('click', () => {
   document.body.classList.toggle("night-mode");
@@ -78,8 +78,9 @@ console.log(supportCategory)
 init();
 
 function init() {
-  landingContainer.style.display = ""
-  supportBtn.style.display = ""
+  focusedBreathing.style.display = ""
+  landingContainer.style.display = "none"
+  supportBtn.style.display = "none"
   choiceContainer.style.display = 'none'
   quoteContainer.style.display = 'none'
   // nextBtn.style.display = "none"
@@ -89,6 +90,7 @@ function init() {
 
 // supportBtn & otherBtn is clicked -> choiceContainer appears
 function reflectChoiceContainer() {
+  focusedBreathing.style.display = "none"
   landingContainer.style.display = "none"
   supportBtn.style.display = "none"
   choiceContainer.style.display = ""
@@ -101,6 +103,7 @@ function reflectChoiceContainer() {
 
 //comparison quote rendered 
 function randomComparisonQuote() {
+  focusedBreathing.style.display = "none"
   landingContainer.style.display = "none"
   supportBtn.style.display = "none"
   choiceContainer.style.display = "none"
@@ -115,6 +118,7 @@ function randomComparisonQuote() {
 
 //impostor syndrome quote rendered
 function randomImpostorSyndromeQuote() {
+  focusedBreathing.style.display = "none"
   landingContainer.style.display = "none"
   supportBtn.style.display = "none"
   choiceContainer.style.display = "none"
@@ -128,6 +132,7 @@ function randomImpostorSyndromeQuote() {
 }
 
 function randomAcceptanceQuote() {
+  focusedBreathing.style.display = "none"
   landingContainer.style.display = "none"
   supportBtn.style.display = "none"
   choiceContainer.style.display = "none"
@@ -138,6 +143,7 @@ function randomAcceptanceQuote() {
 }
 
 function randomSelfLoveQuote() {
+  focusedBreathing.style.display = "none"
   landingContainer.style.display = "none"
   supportBtn.style.display = "none"
   choiceContainer.style.display = "none"
