@@ -33,7 +33,7 @@ const homeBtn = document.getElementById("home")
 
 const quoteText = document.getElementById("quote")
 
-const focusedBreathing = getComputedStyle(document.documentElement).getPropertyValue('--timing')
+const focusedBreathing = document.getElementById("focused-breathing")
 /*----------------------------- Event Listeners -----------------------------*/
 dayNightBtn.addEventListener('click', () => {
   document.body.classList.toggle("night-mode");
@@ -81,8 +81,8 @@ function init() {
   focusedBreathing.style.display = ""
   landingContainer.style.display = "none"
   supportBtn.style.display = "none"
-  choiceContainer.style.display = 'none'
-  quoteContainer.style.display = 'none'
+  choiceContainer.style.display = "none"
+  quoteContainer.style.display = "none"
   // nextBtn.style.display = "none"
   // otherBtn.style.display = "none"
   // homeBtn.style.display = "none"

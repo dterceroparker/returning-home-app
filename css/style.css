@@ -91,8 +91,12 @@ h1 {
   height: 140px; 
   width: 140px; 
 }
-.focused-breathing {
+#focused-breathing {
   /* animation: breath var(--timing) ease infinite none running */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--primary-color);
   width: var(--small);
   height: var(--small);
@@ -102,12 +106,12 @@ h1 {
 }
 @keyframes breath {
   25%, 50% {
-     background-color: var(--secondary-color);
-     width: var(--large);
-     height: var(--large);
-     border-radius: calc( var(--large) / 2);
+      background-color: var(--secondary-color);
+      width: var(--large);
+      height: var(--large);
+      border-radius: calc( var(--large) / 2);
   }   
- }
+  }
 .landing-container {
   display: flex;
 	flex-direction: column;
