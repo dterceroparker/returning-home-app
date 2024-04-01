@@ -2,6 +2,21 @@
 * {
   box-sizing: border-box
 }
+:root {
+  --timing: 8s;
+  --primary-color: lightsteelblue;
+    --secondary-color: lightpink;
+    --large: 200px;
+    --small: 10px;
+}
+@keyframes breath {
+  25%, 50% {
+     background-color: lightpink;
+     width: 200px;
+     height: 200px;
+     border-radius: 100px;
+  }   
+ }
 body {
 	display: flex;
 	flex-direction: column;
@@ -83,6 +98,15 @@ h1 {
   transform: translate(-50%, -50%); 
   height: 140px; 
   width: 140px; 
+}
+.focused-breathing {
+  /* animation: breath var(--timing) ease infinite none running */
+  background-color: var(--primary-color);
+  width: var(--small);
+  height: var(--small);
+  border-radius: calc( var(--small) / 2);
+  display: inline-block;
+  animation: breath 8s ease infinite none running
 }
 .landing-container {
   display: flex;

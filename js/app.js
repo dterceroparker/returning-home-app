@@ -33,7 +33,7 @@ const homeBtn = document.getElementById("home")
 
 const quoteText = document.getElementById("quote")
 
-
+getComputedStyle(document.documentElement).getPropertyValue('--timing')
 /*----------------------------- Event Listeners -----------------------------*/
 dayNightBtn.addEventListener('click', () => {
   document.body.classList.toggle("night-mode");
