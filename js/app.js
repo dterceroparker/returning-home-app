@@ -84,7 +84,7 @@ init();
 
 function init() {
   focusedBreathing.style.display = ""
-  breathingBtn.style.direction = ""
+  breathingBtn.style.display = ""
   landingContainer.style.display = "none"
   supportBtn.style.display = "none"
   choiceContainer.style.display = "none"
@@ -96,7 +96,7 @@ function init() {
 
 function reflectLandingContainer() {
   focusedBreathing.style.display = "none"
-  breathingBtn.style.direction = "none"
+  breathingBtn.style.display = "none"
   landingContainer.style.display = ""
   supportBtn.style.display = ""
   choiceContainer.style.display = "none"
@@ -106,7 +106,7 @@ function reflectLandingContainer() {
 // supportBtn & otherBtn is clicked -> choiceContainer appears
 function reflectChoiceContainer() {
   focusedBreathing.style.display = "none"
-  breathingBtn.style.direction = "none"
+  breathingBtn.style.display = "none"
   landingContainer.style.display = "none"
   supportBtn.style.display = "none"
   choiceContainer.style.display = ""
@@ -120,7 +120,7 @@ function reflectChoiceContainer() {
 //comparison quote rendered 
 function randomComparisonQuote() {
   focusedBreathing.style.display = "none"
-  breathingBtn.style.direction = "none"
+  breathingBtn.style.display = "none"
   landingContainer.style.display = "none"
   supportBtn.style.display = "none"
   choiceContainer.style.display = "none"
@@ -136,7 +136,7 @@ function randomComparisonQuote() {
 //impostor syndrome quote rendered
 function randomImpostorSyndromeQuote() {
   focusedBreathing.style.display = "none"
-  breathingBtn.style.direction = "none"
+  breathingBtn.style.display = "none"
   landingContainer.style.display = "none"
   supportBtn.style.display = "none"
   choiceContainer.style.display = "none"
@@ -151,7 +151,7 @@ function randomImpostorSyndromeQuote() {
 
 function randomAcceptanceQuote() {
   focusedBreathing.style.display = "none"
-  breathingBtn.style.direction = "none"
+  breathingBtn.style.display = "none"
   landingContainer.style.display = "none"
   supportBtn.style.display = "none"
   choiceContainer.style.display = "none"
@@ -163,7 +163,7 @@ function randomAcceptanceQuote() {
 
 function randomSelfLoveQuote() {
   focusedBreathing.style.display = "none"
-  breathingBtn.style.direction = "none"
+  breathingBtn.style.display = "none"
   landingContainer.style.display = "none"
   supportBtn.style.display = "none"
   choiceContainer.style.display = "none"
