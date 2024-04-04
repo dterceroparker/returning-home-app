@@ -35,6 +35,14 @@ nav {
 	/* align-content: flex-start; */
 	/* gap: 30px; */
   box-shadow: 5px 3px 10px rgba(72, 23, 178, 0.219);
+  /* position: fixed; */
+  padding: 10px;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
 }
 .cloud {
 	border-radius: 50%;
@@ -104,7 +112,7 @@ h1 {
   /* display: flex; */
   /* justify-content: center;
   align-items: center; */
-  margin-top: 70px;
+  margin-top: 150px;
   background-color: var(--primary-color);
   width: var(--small);
   height: var(--small);
@@ -128,7 +136,7 @@ button:focus {
 #exit-breathing-button {
   /* position: absolute; */
   width: 14em;
-  margin-left: 30px;
+  margin: 40px 0 0 0;
   height: auto;
 	cursor: pointer;
 	/* border-radius: 1000px; */
@@ -140,7 +148,9 @@ button:focus {
   justify-content: center;
   align-items: center;
   /* height: 100%; */
-  margin-bottom: 20px;
+  margin: 100px 0px 0px 0px;
+  /* margin-bottom: 20px; */
+  /* margin-top: 50px; */
   width: 700px;
   height: 800px;
 } 
@@ -151,6 +161,7 @@ p {
   /* width: 100%;
   height: 10%; */
   /* align-items: center; */
+  padding: 20px;
   width: 500px;
   height: 500px;
   text-align: center;
@@ -286,10 +297,10 @@ h3 h4 {
 	flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 700px;
-  height: 1000px;
+  width: 800px;
+  height: 100%;
   /* margin-bottom: 20px; */
-  margin-top: 50px;
+  margin-top: 250px;
   /* padding: 100px; */
 }
 #quote {
@@ -300,8 +311,11 @@ h3 h4 {
   height: 500px;  */
   /* border: 100px; */
   padding: 60px;
-  height: 80%;
+  height: fixed;
   width: 100%;
+  font-size: 30px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
 }
 #next-other-home {
   display: flex;
@@ -311,7 +325,7 @@ h3 h4 {
 }
 #next, #other, #home {
   /* display: row; */
-  margin: 5px 10px 60px 10px;
+  margin: 0px 10px 100px 10px;
   width: 11em;
   height: 3em;
 	cursor: pointer;
