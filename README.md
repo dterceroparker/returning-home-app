@@ -25,11 +25,11 @@ https://github.com/adam-p/markdown-here/wiki/
 
 | Colons can be used to align columns.
 
-| Technology         | Attributions  | Icebox Items  |
-| -------------      |:-------------:| -------------:|
-| JavaScript         | freesound.org | $1600 |
-| HTML               | favicon.cc    |   $12 |
-| CSS                |               |    $1 |
+|     Technology     | Attributions  |      Icebox Items          |
+|:------------------:|:-------------:|:--------------------------:|
+| JavaScript         | freesound.org | sources & resources library|
+| HTML               | favicon.cc    | element > usage            |
+| CSS                |               |                            |
 
 There must be at least 3 dashes separating each header cell.
 The outer pipes (|) are optional, and you don't need to make the 
