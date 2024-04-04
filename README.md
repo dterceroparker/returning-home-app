@@ -15,7 +15,7 @@ https://github.com/adam-p/markdown-here/wiki/
 
 - Your **`README.md`** file must be grammatically correct and free of spelling errors. -->
 
-# Returning Home App
+# `Returning Home App`
 
 ## Description
 
@@ -25,11 +25,11 @@ https://github.com/adam-p/markdown-here/wiki/
 
 | Colons can be used to align columns.
 
-|     Technology     | Attributions  |      Icebox Items          |
+|   `Technology`     | `Attributions`|    `Icebox Items`          |
 |:------------------:|:-------------:|:--------------------------:|
-| JavaScript         | freesound.org | sources & resources library|
-| HTML               | favicon.cc    | element > usage            |
-| CSS                |               |                            |
+| JavaScript         |*freesound.org*| sources & resources library|
+| HTML               |*favicon.cc*   | CSS element > usage        |
+| CSS                |               | CSS display:flex use       |
 
 There must be at least 3 dashes separating each header cell.
 The outer pipes (|) are optional, and you don't need to make the 
