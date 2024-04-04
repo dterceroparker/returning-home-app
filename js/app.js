@@ -16,6 +16,7 @@ const riverSound = new Audio('../assets/audio/river.wav')
 //light dark mode
 const dayNightBtn = document.getElementById("day-night-mode")
 
+const breathingContainer = document.getElementById("breathing-container")
 const breathingBtn = document.getElementById("exit-breathing-button")
 const focusedBreathing = document.getElementById("focused-breathing")
 
@@ -83,6 +84,7 @@ console.log(supportCategory)
 init();
 
 function init() {
+  breathingContainer.style.display = ""
   focusedBreathing.style.display = ""
   breathingBtn.style.display = ""
   landingContainer.style.display = "none"
@@ -95,6 +97,7 @@ function init() {
 } 
 
 function reflectLandingContainer() {
+  breathingContainer.style.display = "none"
   focusedBreathing.style.display = "none"
   breathingBtn.style.display = "none"
   landingContainer.style.display = ""
@@ -105,6 +108,7 @@ function reflectLandingContainer() {
 
 // supportBtn & otherBtn is clicked -> choiceContainer appears
 function reflectChoiceContainer() {
+  breathingContainer.style.display = "none"
   focusedBreathing.style.display = "none"
   breathingBtn.style.display = "none"
   landingContainer.style.display = "none"
@@ -119,6 +123,7 @@ function reflectChoiceContainer() {
 
 //comparison quote rendered 
 function randomComparisonQuote() {
+  breathingContainer.style.display = "none"
   focusedBreathing.style.display = "none"
   breathingBtn.style.display = "none"
   landingContainer.style.display = "none"
@@ -135,6 +140,7 @@ function randomComparisonQuote() {
 
 //impostor syndrome quote rendered
 function randomImpostorSyndromeQuote() {
+  breathingContainer.style.display = "none"
   focusedBreathing.style.display = "none"
   breathingBtn.style.display = "none"
   landingContainer.style.display = "none"
@@ -150,6 +156,7 @@ function randomImpostorSyndromeQuote() {
 }
 
 function randomAcceptanceQuote() {
+  breathingContainer.style.display = "none"
   focusedBreathing.style.display = "none"
   breathingBtn.style.display = "none"
   landingContainer.style.display = "none"
@@ -162,6 +169,7 @@ function randomAcceptanceQuote() {
 }
 
 function randomSelfLoveQuote() {
+  breathingContainer.style.display = "none"
   focusedBreathing.style.display = "none"
   breathingBtn.style.display = "none"
   landingContainer.style.display = "none"
