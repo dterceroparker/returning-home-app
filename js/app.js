@@ -83,7 +83,7 @@ console.log(supportCategory)
   }
 }
 
-init();
+init()
 
 function init() {
   breathingContainer.style.display = ""

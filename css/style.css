@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 * {
 	box-sizing: border-box
 }
@@ -53,13 +53,14 @@ nav {
 	filter: drop-shadow(20px 20px 10px rgba(240, 219, 27, 0.354));
 }
 h1 {
-	font-family: "Cedarville Cursive", cursive;
-	font-weight: 400;
-	font-size: 2rem;
-	font-style: oblique;
+	font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  font-size: 35px;
 	margin-top: 50px;
 	margin-left: -60px;
-	color: #1b0bb0;
+	color: #1b0bb0c7;
 }
 #day-night-mode {
 	margin-top: 50px;
