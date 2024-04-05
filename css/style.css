@@ -102,6 +102,14 @@ h1 {
 	height: 70%;
 	align-items: center;
 }
+h5 {
+  position: fixed;
+  margin-left: 500px;;
+  margin-top: 190px;
+writing-mode: vertical-rl;
+text-orientation: upright;
+background-color: rgba(15, 151, 235, 0.383)
+}
 #focused-breathing {
 	margin-top: 150px;
 	background-color: var(--primary-color);
@@ -210,6 +218,8 @@ button {
 	width: 800px;
 	height: 100%;
 	margin-top: 250px;
+  scrollbar-color: rgba(187, 0, 255, 0.143) rgba(38, 0, 255, 0);
+  scrollbar-width: thin;
 }
 #quote {
 	padding: 60px;
