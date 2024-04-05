@@ -14,7 +14,7 @@
 The returning home app offers a space for/to:
 
 - [x] Eight seconds of deep breathing 
-- [x] Wisdom from Stoic philosophy, Buddhism, psychologists and a physician.  
+- [x] Wisdom from Stoic philosophy, Buddhism, psychologists and a physician  
 - [x] Support categories: a. Comparison b. Impostor Syndrome c. Acceptance d. Self-Love
 - [x] Randomized quotes per category
 - [x] Day night mode
