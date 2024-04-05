@@ -14,7 +14,7 @@
 The returning home app offers:
 
 - [x] Eight seconds of deep breathing 
-- [x] Wisdom from Stoic philosophy, Buddhism, psychologists and a physician  
+- [x] Wisdom from Stoic philosophy, Buddhism, psychologists, a physician and a poet 
 - [x] Support categories: a. Comparison b. Impostor Syndrome c. Acceptance d. Self-Love
 - [x] Randomized quotes per category
 - [x] Day night mode
@@ -36,6 +36,8 @@ The returning home app offers:
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ***
 
 ##### `Attributions Links`
@@ -44,6 +46,11 @@ The returning home app offers:
 [DirtyMarkup Beautifier](https://www.10bestdesign.com/dirtymarkup/js/) <br />
 [CSS3 Clouds](https://lauryndbrown.github.io/2017/06/08/creating-clouds-in-css.html) <br />
 [CSS Breathing Animation](https://dev.to/scrabill/focused-breathing-a-css-animation-to-help-with-meditation-and-focused-breathing-exercises-dob) <br />
+[Favicon.cc](https://www.favicon.cc/) <br />
+[freesound.org](https://freesound.org/people/klankbeeld/sounds/633954/) <br />
+[coolors.co](https://coolors.co/gradients) <br />
+[markdown-badges](https://github.com/Ileriayo/markdown-badges)
+
 
 
 

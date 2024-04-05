@@ -64,7 +64,6 @@ selfLoveBtn.addEventListener("click", randomSelfLoveQuote)
 // ------------------------------------------------------ //
 
 function handleSupportCategory() {
-console.log(supportCategory)
   switch (supportCategory) {
   case "comparison":
     randomComparisonQuote();
