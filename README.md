@@ -16,6 +16,7 @@
 - Your **`README.md`** file must be grammatically correct and free of spelling errors. -->
 
 ![](assets/images/quote.png)
+![](assets/images/support.png)
 
 # `Returning Home App`
 ***
