@@ -14,13 +14,13 @@ body {
 	flex-direction: column;
 	height: 100vh;
 	background-color: #4362eed3;
-	color: rgb(0, 0, 0);
+	color: rgb(248, 244, 244);
 	margin: 0;
 }
 body.night-mode {
 	background-color: #1f1b24;
 	overlay: 24dp;
-	color: #f2f4f1;
+	color: #e3e92c81;
 }
 nav {
 	display: flex;
@@ -63,8 +63,8 @@ h1 {
 }
 #day-night-mode {
 	margin-top: 50px;
-	width: 5em;
-	height: auto;
+	width: 4em;
+	height: 4em;
 	cursor: pointer;
 	border-radius: 1000px;
 	align-items: center;
@@ -125,7 +125,7 @@ button:focus {
 #exit-breathing-button {
 	width: 15em;
 	margin: 40px 0 0 0;
-	height: auto;
+	height: 3em;
 	cursor: pointer;
 }
 .landing-container {
@@ -133,20 +133,19 @@ button:focus {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 100px 0px 0px 0px;
+	margin: 150px 0px 0px 0px;
 	width: 700px;
 	height: 800px;
 }
 p {
 	padding: 20px;
 	width: 500px;
-	height: 500px;
+	height: 510px;
 	text-align: center;
 	margin-bottom: 10%;
 	font-size: 1.80rem;
 	line-height: 55px;
 	filter: drop-shadow(20px 20px 10px rgba(66, 60, 235, 0.686));
-	color: #efeaea;
 	font-family: "Walter Turncoat", cursive;
 	overflow-y: auto;
 	box-shadow: -1px 2px 2px 0px #555, inset 0 0 10px 0 #555;
@@ -158,7 +157,6 @@ p {
 	width: 65%;
 	height: 2.4em;
 	font-size: 18px;
-	/* margin-bottom: 10%; */
 	cursor: pointer;
 	border: 1px solid rgba(0, 0, 0, 0.447);
 	border-radius: 20px;
@@ -173,7 +171,6 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/* height: 100%; */
 	width: 100%;
 	margin-bottom: 20px;
 }
@@ -183,14 +180,11 @@ p {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 20px;
-	margin-top: 100px;
+	margin-top: 150px;
 }
 button {
-	/* margin-left: 10px; */
 	margin-right: 50px;
 	margin-bottom: 50px;
-	/* margin-bottom: 20px; */
-	/* justify-content: space-between;   */
 	width: 15em;
 	height: 15em;
 	cursor: pointer;
@@ -207,83 +201,6 @@ button {
 	background: -webkit-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#696EFF", endColorstr="#F8ACFF", GradientType=1);
 }
-/* #sources-well { */
-
-/* position: relative; */
-
-/* display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-end;
-  width: 300px;
-  height: 300px;
-  margin-left: -1000px; */
-
-/* margin-top: 200px; */
-
-/* flex-direction: column; */
-
-/* margin-right: 0; */
-
-/* background-color: #0f030312;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);  */
-
-/* height: 140px;  */
-
-/* width: 140px;  */
-
-/* filter: drop-shadow(20px 20px 10px rgba(66, 60, 235, 0.686));
-  right: -3%;
-  filter: drop-shadow(20px 20px 10px rgba(66, 60, 235, 0.686)); */
-
-/* top: 50%;  */
-
-/* transform: translate(-50%, -50%);  */
-
-/* height: 140px;  */
-
-/* width: 140px;  */
-
-/* } */
-
-/* .pentagon {
-  box-sizing: content-box;
-  position: absolute;
-  /* top: 70%; */
-
-/* left: 50%; */
-
-/* transform: translate(-50%, -50%); */
-
-/* height: 0; */
-
-/* width: 180px;
-  border-top: 180px solid rgba(0, 66, 128, 0.259);
-  border-left: 90px solid transparent;
-  border-right: 90px solid transparent; 
-  filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354)); */
-
-/* }
-.pentagon:after {
-  position: absolute;
-  content: '';
-  border-bottom: 180px solid rgba(0, 66, 128, 0.259);
-  border-left: 180px solid transparent;
-  border-right: 180px solid transparent;
-  bottom: 180px;
-  left: -90px;
-/* } */
-
-/* 
-h3 h4 {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-right: 1000px;
-
-} */
-
 .quote-container {
 	display: flex;
 	flex-direction: column;
@@ -291,21 +208,13 @@ h3 h4 {
 	justify-content: center;
 	width: 800px;
 	height: 100%;
-	/* margin-bottom: 20px; */
 	margin-top: 250px;
-	/* padding: 100px; */
 }
 #quote {
-	/* display: flex;
-  align-items: center;
-  justify-content: center; */
-	/* width: 500px;
-  height: 500px;  */
-	/* border: 100px; */
-	padding: 30px;
+	padding: 60px;
 	height: fixed;
 	width: 100%;
-	font-size: 30px;
+	font-size: 27px;
 	word-spacing: 5px;
 	letter-spacing: 2px;
 }
@@ -316,7 +225,6 @@ h3 h4 {
 	justify-content: center;
 }
 #next, #other, #home {
-	/* display: row; */
 	margin: 0px 10px 100px 10px;
 	width: 11em;
 	height: 3em;
@@ -324,12 +232,5 @@ h3 h4 {
 	border: 1px solid rgba(0, 0, 0, 0.447);
 	border-radius: 20px;
 	font-size: 1rem;
-}
-@media screen and (min-width:480px) {
-	.column {
-		width: 100%;
-		max-width: 500px;
-		display: table-cell;
-		padding: .5em;
-	}
+  padding: 10px;
 }

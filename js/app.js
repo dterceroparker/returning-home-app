@@ -39,10 +39,20 @@ const quoteText = document.getElementById("quote")
 
 
 /*----------------------------- Event Listeners -----------------------------*/
-dayNightBtn.addEventListener('click', () => {
+// dayNightBtn.addEventListener('click', () => {
+//   document.body.classList.toggle("night-mode");
+//   //classList property can be modified using toggle() method
+// })
+let mode = "day"
+dayNightBtn.addEventListener("click",() => {
   document.body.classList.toggle("night-mode");
-  //classList property can be modified using toggle() method
-  console.log("night-mode")
+  if (mode === "night") {
+    dayNightBtn.textContent = "Night mode" 
+    mode = "day"
+  } else {
+    dayNightBtn.textContent = "Day mode"
+    mode = "night"
+  }
 })
 
 breathingBtn.addEventListener("click", reflectLandingContainer)
