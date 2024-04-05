@@ -36,5 +36,16 @@ The returning home app offers:
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
+***
+
+##### `Attributions Links`
+[GitHub Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) <br />
+[Pure CSS Chalkboard](https://gist.github.com/craigiswayne/58938f6e7c8492673f97) <br />
+[DirtyMarkup Beautifier](https://www.10bestdesign.com/dirtymarkup/js/) <br />
+[CSS3 Clouds](https://lauryndbrown.github.io/2017/06/08/creating-clouds-in-css.html) <br />
+[CSS Breathing Animation](https://dev.to/scrabill/focused-breathing-a-css-animation-to-help-with-meditation-and-focused-breathing-exercises-dob) <br />
+
+
+
 
 
