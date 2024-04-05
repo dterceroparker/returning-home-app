@@ -18,6 +18,7 @@ The returning home app offers:
 - [x] Support categories: a. Comparison b. Impostor Syndrome c. Acceptance d. Self-Love
 - [x] Randomized quotes per category
 - [x] Day night mode
+- [x] Purple (wisdom) and blue (trust) color tone 
 
 
 ---
