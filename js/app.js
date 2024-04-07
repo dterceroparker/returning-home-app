@@ -38,7 +38,7 @@ const quoteText = document.getElementById("quote")
 // ------------------------------------------------------ //
 let mode = "day"
 dayNightBtn.addEventListener("click", () => {
-	document.body.classList.toggle("night-mode");
+  document.body.classList.toggle("night-mode");
 	if (mode === "night") {
 		dayNightBtn.textContent = "Night mode"
 		mode = "day"
