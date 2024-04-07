@@ -66,7 +66,7 @@ selfLoveBtn.addEventListener("click", randomSelfLoveQuote)
 function handleSupportCategory() {
   switch (supportCategory) {
   case "comparison":
-    randomComparisonQuote();
+    randomComparisonQuote()
     break;
   case "impostor syndrome": 
     randomImpostorSyndromeQuote()
