@@ -46,6 +46,7 @@ The returning home app offers:
 - [x] [coolors.co](https://coolors.co/gradients) <br />
 - [x] [CSS Breathing Animation](https://dev.to/scrabill/focused-breathing-a-css-animation-to-help-with-meditation-and-focused-breathing-exercises-dob) <br />
 - [x] [CSS3 Clouds](https://lauryndbrown.github.io/2017/06/08/creating-clouds-in-css.html) <br />
+- [x] [CSS static starfield](https://stackoverflow.com/questions/24662684/pure-css-static-starfield) <br />
 - [x] [DirtyMarkup Beautifier](https://www.10bestdesign.com/dirtymarkup/js/) <br />
 - [x] [Favicon.cc](https://www.favicon.cc/) <br />
 - [x] [fonts.google](https://fonts.google.com/specimen/Dancing+Script)
