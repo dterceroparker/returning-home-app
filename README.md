@@ -10,7 +10,7 @@
 ---
 #### `Description`
 ##### A bootcamp experience inevitably leads us to experience the emotional cycle of change. The combination of facing the "valley of despair" stage whilst the insidious imposter syndrome voice gets louder--all while attempting to learn a completely new language--can make us feel alone in the fog. When faced with doubt, fear, and the strong urge to give up; understanding, support and wisdom can help us embrace and trust the journey. As Buddhist monk Thích Nhất Hạnh says, it is with the breath that we return home to ourselves and to the present moment. 
-
+---
 The returning home app offers:
 
 - [x] Eight seconds of deep breathing 
@@ -19,7 +19,8 @@ The returning home app offers:
 - [x] Randomized quotes per category
 - [x] Day night mode
 - [x] Purple (wisdom) and blue (trust) color tone 
-
+---
+[Project Planning Material Link](https://docs.google.com/document/d/1xvFRDjoEiwNqBVws82SyiS03iw69sdkwwq9PnPkq3C4/edit)
 
 ---
 
