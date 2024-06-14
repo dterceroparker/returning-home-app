@@ -18,6 +18,20 @@
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .cloud {
+    width: 120px;
+    height: 120px;
+  }
+  #breathing-container {
+    width: 80%;
+  }
+  .landing-container {
+    margin: 50px auto;
+  }
+}
+
+
 * {
 	box-sizing: border-box;
 }
@@ -48,8 +62,6 @@ body {
 
 nav {
 	display: flex;
-	flex-direction: row;
-  flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
   height: auto;  
@@ -60,9 +72,16 @@ nav {
   top: 0;
   width: 100%;
   z-index: 1000;
-	background-image: radial-gradient(2px 2px at 20px 30px, #eeeeee, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
+	background-image: 
+	radial-gradient(2px 2px at 20px 30px, #f3df04, rgba(0, 0, 0, 0)), 
+	radial-gradient(2px 2px at 40px 70px, #f3df04, rgba(0, 0, 0, 0)), 
+	radial-gradient(2px 2px at 50px 160px, #f3df04, rgba(0, 0, 0, 0)), 
+	radial-gradient(2px 2px at 90px 40px, #f3df04, rgba(0, 0, 0, 0)), 
+	radial-gradient(2px 2px at 130px 80px, #f3df04, rgba(0, 0, 0, 0)), 
+	radial-gradient(2px 2px at 160px 120px, #f3df04, rgba(0, 0, 0, 0));
+
 	background-repeat: repeat;
-	background-size: 200px 200px;
+  background-size: 200px 200px;
 }
 
 .cloud {
@@ -151,7 +170,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   background-color: #fff; 
-  color: #333; 
+	color: #ffffff87; 
   font-size: 16px; 
   transition: all 0.2s ease;
 }
@@ -163,9 +182,23 @@ button:focus {
 }
 
 #exit-breathing-button {
-  width: 15em;
-  margin: 40px 0 0 0;
-  height: 3em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  padding: 15px 30px; 
+  font-size: 16px; 
+  cursor: pointer;
+  border: none;
+  border-radius: 5px; 
+  background-color: #428bca; 
+  color: #ffffff87; 
+  transition: all 0.2s ease;
+  text-align: center; 
+	height: 7%
+}
+
+#exit-breathing-button:hover {
+  background-color: #357ebd; 
 }
 
 .landing-container {
@@ -178,7 +211,32 @@ button:focus {
   max-height: 800px; 
 }
 
-p {
+#thich-quote {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 150px auto; 
+  width: 700px; 
+  max-height: 800px;
+	padding: 20px;
+  width: 100%; 
+  text-align: justify; 
+  margin-bottom: 1em; 
+  font-size: 25px; 
+  line-height: 2;
+  font-family: "Walter Turncoat", cursive;
+  height: 510px;
+  filter: drop-shadow(20px 20px 10px rgba(66, 60, 235, 0.686));
+  overflow-y: auto;
+	scrollbar-color: rgba(23, 6, 29, 0.062) #656cee66;
+  scrollbar-width: thin;
+  box-shadow: -1px 2px 2px 0px #555, inset 0 0 10px 0 #555;
+  border-radius: 10px;
+  border: #656beec5 solid 10px;
+}
+
+p  {
 	padding: 20px;
   width: 100%; 
   text-align: justify; 
@@ -205,7 +263,7 @@ p {
   cursor: pointer;
   border-radius: 5px; 
   background-color: #d3e0e9; 
-  color: #333; 
+	color: #ffffffc6; 
   transition: all 0.2s ease; 
 	border: 1px solid rgba(0, 0, 0, 0.447);
 	border-radius: 10px;
@@ -250,14 +308,13 @@ button {
   border: none; 
   border-radius: 50%; 
   background-color: #d3e0e9; 
-  color: #333; 
+  color: #ffffffc6; 
   cursor: pointer;
 	width: 15em;
 	height: 15em;
 	word-spacing: 5px;
 	letter-spacing: 2px;
 	filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
-	color: #201c2cae;
 	background: hsla(238, 100%, 71%, 1);
 	background: linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
 	background: -moz-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
@@ -310,7 +367,7 @@ button:hover {
 	padding: 10px 20px;
   border: 1px solid rgba(0, 0, 0, 0.3); 
   background-color: #d3e0e9; 
-  color: #333;
+  color: #ffffffc6; 
   transition: all 0.2s ease; 
 }
 
