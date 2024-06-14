@@ -100,6 +100,7 @@ function getRandomAcceptanceQuote() {
 function getRandomSelfLoveQuote() {
 	return selfLoveQuotes[Math.floor(Math.random() * selfLoveQuotes.length)]
 }
+
 export {
 	getRandomComparisonQuote,
 	getRandomImpostorSyndromeQuote,

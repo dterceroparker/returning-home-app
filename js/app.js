@@ -5,11 +5,6 @@ import {
 	getRandomSelfLoveQuote
 } from "../data/quotes.js"
 // ------------------------------------------------------ //
-const comparisonQuotes = []
-const impostorSyndromeQuotes = []
-const acceptanceQuotes = []
-const selfLoveQuotes = []
-// ------------------------------------------------------ //
 let supportCategory = ""
 
 const riverSound = new Audio('../assets/audio/river.wav')
@@ -85,33 +80,28 @@ function handleSupportCategory() {
 init()
 
 function init() {
-  breathingContainer.style.display = ""
-  focusedBreathing.style.display = ""
-  breathingBtn.style.display = ""
-  landingContainer.style.display = "none"
-  supportBtn.style.display = "none"
-  choiceContainer.style.display = "none"
-  quoteContainer.style.display = "none"
-} 
+  const elementsToShow = [breathingContainer, focusedBreathing, breathingBtn]
+  const elementsToHide = [landingContainer, supportBtn, choiceContainer, quoteContainer]
+
+  elementsToShow.forEach(element => element.style.display = "")
+  elementsToHide.forEach(element => element.style.display = "none")
+}
 
 function reflectLandingContainer() {
-  breathingContainer.style.display = "none"
-  focusedBreathing.style.display = "none"
-  breathingBtn.style.display = "none"
-  landingContainer.style.display = ""
-  supportBtn.style.display = ""
-  choiceContainer.style.display = "none"
-  quoteContainer.style.display = "none"
+  const elementsToShow = [landingContainer, supportBtn]
+  const elementsToHide = [breathingContainer, focusedBreathing, breathingBtn, choiceContainer, quoteContainer]
+
+  elementsToShow.forEach(element => element.style.display = "")
+  elementsToHide.forEach(element => element.style.display = "none")
 }
 
 function reflectChoiceContainer() {
-  breathingContainer.style.display = "none"
-  focusedBreathing.style.display = "none"
-  breathingBtn.style.display = "none"
-  landingContainer.style.display = "none"
-  supportBtn.style.display = "none"
-  choiceContainer.style.display = ""
-  quoteContainer.style.display = "none"
+  const elementsToShow = [choiceContainer]
+  const elementsToHide = [breathingContainer, focusedBreathing, breathingBtn, landingContainer, supportBtn, quoteContainer]
+
+  elementsToShow.forEach(element => element.style.display = "")
+  elementsToHide.forEach(element => element.style.display = "none")
+
   riverSound.play(2000)
 }
 
@@ -162,4 +152,5 @@ function randomSelfLoveQuote() {
   supportCategory = "self love"
   quoteText.textContent = getRandomSelfLoveQuote().quote
 }
+
 // ------------------------------------------------------ //
