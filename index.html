@@ -8,7 +8,18 @@
 	<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
 	<link href="./css/style.css" rel="stylesheet">
 	<link href="./assets/favicon.ico" id="favicon" rel="icon" sizes="32x32" type="image/png">
-	<script type="module" src="./js/app.js"></script>
+	<script type="module" src="./js/app.js">
+
+const choiceContainer = document.querySelector('.choice-container');
+const navbarHeight = document.querySelector('nav').offsetHeight; 
+
+const availableHeight = window.innerHeight - navbarHeight; 
+const contentHeight = choiceContainer.scrollHeight; 
+
+const paddingTop = Math.max(0, (availableHeight - contentHeight) / 2); 
+
+choiceContainer.style.paddingTop = `${paddingTop}px`;
+	</script>
 	<title>Returning Home</title>
 </head>
 <body>
