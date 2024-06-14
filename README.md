@@ -1,6 +1,7 @@
 
-![](assets/images/quote.png)
-![](assets/images/support.png)
+![Image 1](assets/images/quote.png)
+![Image 2](assets/images/support.png)
+![Image 3](assets/images/breathing.png)
 
 # `Returning Home App`
 ***
