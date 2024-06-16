@@ -47,6 +47,7 @@
 body {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh; 
   background-color: #4362eed3;
   color: #f8f4f4; 
@@ -61,59 +62,70 @@ body {
 }
 
 nav {
-	display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-between; 
-  align-items: center; 
-  padding: 1rem;
-  background-color: #243a69;  
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  
-	background-image: 
-	radial-gradient(2px 2px at 20px 30px, #f3df04, rgba(0, 0, 0, 0)), 
-	radial-gradient(2px 2px at 40px 70px, #f3df04, rgba(0, 0, 0, 0)), 
-	radial-gradient(2px 2px at 50px 160px, #f3df04, rgba(0, 0, 0, 0)), 
-	radial-gradient(2px 2px at 90px 40px, #f3df04, rgba(0, 0, 0, 0)), 
-	radial-gradient(2px 2px at 130px 80px, #f3df04, rgba(0, 0, 0, 0)), 
-	radial-gradient(2px 2px at 160px 120px, #f3df04, rgba(0, 0, 0, 0));
-	background-repeat: repeat;
-  background-size: 200px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 200px;
+  position: fixed;
+  padding: 1rem 2rem; 
+  background-color: rgb(11, 11, 12);
+  box-shadow: 0 5px 10px -5px rgb(15, 195, 245);
+  -moz-box-shadow: 0 5px 10px -5px rgba(15, 195, 245, 0.85);
+  -webkit-box-shadow: 0 5px 10px -5px rgba(15, 195, 245, 0.85);
 }
 
 .logo {
   flex: 0 0 auto; 
-  margin-right: 1rem; 
 }
 
 .logo img {
-  height: auto; 
-  width: 50%; 
+  height: 200px; /* Adjust logo height */
+  width: auto; /* Maintain aspect ratio */
 }
 
-#day-night-mode {
-	display: flex;
+#day-night-mode{
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
-	width: 5em;
-	height: 5em;
-	cursor: pointer;
-	border-radius: 1000px;
-	filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
-	color: #201c2cdf;
-	background: hsla(39, 100%, 71%, 1);
-	background: linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
-	background: -moz-linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
-	background: -webkit-linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFCB6B", endColorstr="#3D8BFF", GradientType=1);
+  margin: 0;
+  padding: 0.5rem 1rem;
+  /* Adjust size based on content */
+  font-size: 0.8rem;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
+  color: #201c2cdf;
+  background: hsla(39, 100%, 71%, 1);
+  background: linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFCB6B", endColorstr="#3D8BFF", GradientType=1);
 }
 
 .meditation {
-	border-radius: 50%;
-  height: 140px;
-  width: 140px;
-	filter: drop-shadow(20px 20px 10px rgba(66, 60, 235, 0.686));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  /* Adjust size based on content */
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border-radius: 50%;
+  filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
+  color: #201c2cdf;
+  background: hsla(39, 100%, 71%, 1);
+  background: linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFCB6B", endColorstr="#3D8BFF", GradientType=1);
 }
+
 
 @media only screen and (max-width: 768px) {
   .meditation {
@@ -129,11 +141,12 @@ nav {
 }
 
 .main-content {
+  margin-top: calc(200px + 1rem); 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 75vh; 
+  min-height: calc(100vh - 200px);
 }
 
 #breathing-container {
@@ -143,10 +156,11 @@ nav {
   align-items: center;
   width: 100%;
   height: 70%; 
+  position: relative;
 }
 
 #focused-breathing {
-  margin-top: 150px;
+
   background-color: var(--primary-color);
   width: var(--small);
   height: var(--small);
@@ -184,6 +198,8 @@ button:focus {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+  align-items: center;
+  margin: 150px auto;
   padding: 15px 30px; 
   font-size: 16px; 
   cursor: pointer;
@@ -193,7 +209,12 @@ button:focus {
   color: #ffffff87; 
   transition: all 0.2s ease;
   text-align: center; 
-	height: 7%
+	height: 7%;
+  width: 15%;
+  position: fixed;
+  margin: 0 auto;
+  bottom: 10px; 
+  left: 10px;
 }
 
 #exit-breathing-button:hover {
@@ -222,7 +243,7 @@ button:focus {
   width: 100%; 
   text-align: justify; 
   margin-bottom: 1em; 
-  font-size: 25px; 
+  font-size: 25px;  
   line-height: 2;
   font-family: "Walter Turncoat", cursive;
   height: 510px;
@@ -240,7 +261,7 @@ p  {
   width: 100%; 
   text-align: justify; 
   margin-bottom: 1em; 
-  font-size: 16px; 
+  font-size: 25px;  
   line-height: 2;
   font-family: "Walter Turncoat", cursive;
   height: 510px;
@@ -338,7 +359,7 @@ button:hover {
 
 #quote {
 	padding: 60px;
-  font-size: 27px;
+  font-size: 25px; 
   word-spacing: 5px;
   letter-spacing: 2px;
   text-align: center; 
