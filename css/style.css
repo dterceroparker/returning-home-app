@@ -222,13 +222,14 @@ button:focus {
 }
 
 .landing-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 150px auto; 
-  width: 700px; 
-  max-height: 800px; 
+
+
+  margin-top: calc(200px + 1rem); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
 }
 
 #thich-quote {
@@ -236,17 +237,14 @@ button:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 150px auto; 
-  width: 700px; 
-  max-height: 800px;
 	padding: 20px;
   width: 100%; 
   text-align: justify; 
-  margin-bottom: 1em; 
+
   font-size: 25px;  
   line-height: 2;
   font-family: "Walter Turncoat", cursive;
-  height: 510px;
+
   filter: drop-shadow(20px 20px 10px rgba(66, 60, 235, 0.686));
   overflow-y: auto;
 	scrollbar-color: rgba(23, 6, 29, 0.062) #656cee66;
