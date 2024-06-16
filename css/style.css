@@ -62,16 +62,12 @@ body {
 
 nav {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-  height: auto;  
-  position: fixed;
-  padding: 10px 20px;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 1rem;
   background-color: #243a69;  
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  
-  top: 0;
-  width: 100%;
-  z-index: 1000;
 	background-image: 
 	radial-gradient(2px 2px at 20px 30px, #f3df04, rgba(0, 0, 0, 0)), 
 	radial-gradient(2px 2px at 40px 70px, #f3df04, rgba(0, 0, 0, 0)), 
@@ -79,40 +75,30 @@ nav {
 	radial-gradient(2px 2px at 90px 40px, #f3df04, rgba(0, 0, 0, 0)), 
 	radial-gradient(2px 2px at 130px 80px, #f3df04, rgba(0, 0, 0, 0)), 
 	radial-gradient(2px 2px at 160px 120px, #f3df04, rgba(0, 0, 0, 0));
-
 	background-repeat: repeat;
   background-size: 200px 200px;
 }
 
-.cloud {
-  display: flex; 
-  align-items: center; 
-	border-radius: 50%;
-	height: 190px;
-	width: 190px;
-	background: #93b4e5d8;
-	box-shadow: #93b4e5d8 -95px -35px 0 -5px, #93b4e5d8 25px -45px, #93b4e5d8 30px 40px, #93b4e5d8 -80px 45px 0 -10px, #93b4e5d8 105px 5px 0 -5px;
-	filter: drop-shadow(20px 20px 10px rgba(240, 219, 27, 0.354));
+.logo {
+  flex: 0 0 auto; 
+  margin-right: 1rem; 
 }
 
-.cloud h1  {
-	font-family: "Dancing Script", cursive;
-  font-size: 35px;
-	margin-left: -60px;
-	color: #1b0bb0c7;
+.logo img {
+  height: auto; 
+  width: 50%; 
 }
 
 #day-night-mode {
 	display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 20px;
-	margin-top: 50px;
-	width: 4em;
-	height: 4em;
+  justify-content: center;
+  margin: 0 auto;
+	width: 5em;
+	height: 5em;
 	cursor: pointer;
 	border-radius: 1000px;
-	align-items: center;
 	filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
 	color: #201c2cdf;
 	background: hsla(39, 100%, 71%, 1);
@@ -129,12 +115,25 @@ nav {
 	filter: drop-shadow(20px 20px 10px rgba(66, 60, 235, 0.686));
 }
 
+@media only screen and (max-width: 768px) {
+  .meditation {
+    display: block; 
+    width: 100%; 
+    height: auto; 
+    margin-top: 1rem; 
+  }
+  
+  #day-night-mode {
+    order: 2; 
+  }
+}
+
 .main-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; 
+  height: 75vh; 
 }
 
 #breathing-container {
