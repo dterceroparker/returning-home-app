@@ -49,15 +49,20 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh; 
-  background-color: #4362eed3;
+  background: hsla(238, 100%, 71%, 1);
+	background: linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+	background: -moz-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+	background: -webkit-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#696EFF", endColorstr="#F8ACFF", GradientType=1);
   color: #f8f4f4; 
   font-family: sans-serif;
   margin: 0;
   transition: background-color 0.5s ease; 
+
 }
 
 .night-mode {
-  background-color: #212529;
+  background-color: #11001c;
   color: #e3e92c81;
 }
 
@@ -69,10 +74,11 @@ nav {
   height: 200px;
   position: fixed;
   padding: 1rem 2rem; 
-  background-color: rgb(11, 11, 12);
-  box-shadow: 0 5px 10px -5px rgb(15, 195, 245);
-  -moz-box-shadow: 0 5px 10px -5px rgba(15, 195, 245, 0.85);
-  -webkit-box-shadow: 0 5px 10px -5px rgba(15, 195, 245, 0.85);
+  background: rgb(30, 2, 66);
+	
+  box-shadow: 0 5px 10px -5px rgb(236, 244, 12);
+  -moz-box-shadow: 0 5px 10px -5px rgba(245, 214, 15, 0.85);
+  -webkit-box-shadow: 0 5px 10px -5px rgba(234, 245, 15, 0.85);
 }
 
 .logo {
@@ -80,8 +86,8 @@ nav {
 }
 
 .logo img {
-  height: 200px; /* Adjust logo height */
-  width: auto; /* Maintain aspect ratio */
+  height: 200px; 
+  width: auto; 
 }
 
 #day-night-mode{
@@ -91,7 +97,6 @@ nav {
   justify-content: center;
   margin: 0;
   padding: 0.5rem 1rem;
-  /* Adjust size based on content */
   font-size: 0.8rem;
   width: 50px;
   height: 50px;
@@ -111,15 +116,12 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  /* Adjust size based on content */
   width: 100px;
   height: 100px;
-  cursor: pointer;
   border-radius: 50%;
   filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
   color: #201c2cdf;
-  background: hsla(39, 100%, 71%, 1);
+  background: rgb(237, 225, 4);
   background: linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
   background: -moz-linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
   background: -webkit-linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
@@ -147,6 +149,7 @@ nav {
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 200px);
+  padding: 75px 50px;
 }
 
 #breathing-container {
@@ -177,23 +180,6 @@ nav {
   }
 }
 
-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #fff; 
-	color: #ffffff87; 
-  font-size: 16px; 
-  transition: all 0.2s ease;
-}
-
-button:focus {
-  outline-color: transparent;
-  outline-style: none;
-  box-shadow: 0 0 0 2px #4b0fe240; 
-}
-
 #exit-breathing-button {
 	display: flex;
 	flex-direction: column;
@@ -205,8 +191,7 @@ button:focus {
   cursor: pointer;
   border: none;
   border-radius: 5px; 
-  background-color: #428bca; 
-  color: #ffffff87; 
+  color: #ffffff; 
   transition: all 0.2s ease;
   text-align: center; 
 	height: 7%;
@@ -218,53 +203,36 @@ button:focus {
 }
 
 #exit-breathing-button:hover {
-  background-color: #357ebd; 
+  background-color: #1374ca; 
 }
 
-.landing-container {
-
-
-  margin-top: calc(200px + 1rem); 
+.landing-container, .quote-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  margin-top: calc(200px + 1rem); 
   min-height: calc(100vh - 200px);
+ 
+  margin: 0 auto; 
 }
 
-#thich-quote {
+#thich-quote, #quote {
+  width: 510px;
+  height: 510px;
 	display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-	padding: 20px;
-  width: 100%; 
-  text-align: justify; 
-
-  font-size: 25px;  
+  font-size: 20px;  
+  padding: 60px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
   line-height: 2;
-  font-family: "Walter Turncoat", cursive;
-
-  filter: drop-shadow(20px 20px 10px rgba(66, 60, 235, 0.686));
   overflow-y: auto;
-	scrollbar-color: rgba(23, 6, 29, 0.062) #656cee66;
-  scrollbar-width: thin;
-  box-shadow: -1px 2px 2px 0px #555, inset 0 0 10px 0 #555;
-  border-radius: 10px;
-  border: #656beec5 solid 10px;
-}
-
-p  {
-	padding: 20px;
-  width: 100%; 
-  text-align: justify; 
-  margin-bottom: 1em; 
-  font-size: 25px;  
-  line-height: 2;
+  overflow-wrap: break-word;
   font-family: "Walter Turncoat", cursive;
-  height: 510px;
   filter: drop-shadow(20px 20px 10px rgba(66, 60, 235, 0.686));
-  overflow-y: auto;
 	scrollbar-color: rgba(23, 6, 29, 0.062) #656cee66;
   scrollbar-width: thin;
   box-shadow: -1px 2px 2px 0px #555, inset 0 0 10px 0 #555;
@@ -285,11 +253,7 @@ p  {
   transition: all 0.2s ease; 
 	border: 1px solid rgba(0, 0, 0, 0.447);
 	border-radius: 10px;
-	background: hsla(238, 100%, 71%, 1);
-	background: linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
-	background: -moz-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
-	background: -webkit-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#696EFF", endColorstr="#F8ACFF", GradientType=1);
+	
 }
 
 #support-button:hover {
@@ -345,23 +309,9 @@ button:hover {
   background-color: #e8f0ff; 
 }
 
-.quote-container {
-	display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 800px;
-  margin: 0 auto; 
-  padding-top: calc(var(--nav-height) + 20px); 
-}
 
-#quote {
-	padding: 60px;
-  font-size: 25px; 
-  word-spacing: 5px;
-  letter-spacing: 2px;
-  text-align: center; 
-}
+
+
 
 .next-other-home {
 	display: flex;
