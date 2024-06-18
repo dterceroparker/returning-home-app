@@ -35,10 +35,10 @@ let mode = "day"
 dayNightBtn.addEventListener("click", () => {
   document.body.classList.toggle("night-mode");
 	if (mode === "night") {
-		dayNightBtn.textContent = "Night mode"
+		dayNightBtn.textContent = "Night Mode"
 		mode = "day"
 	} else {
-    dayNightBtn.textContent = "Day mode"
+    dayNightBtn.textContent = "Day Mode"
     mode = "night"
 	}
 })

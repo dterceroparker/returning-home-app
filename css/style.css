@@ -48,22 +48,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh; 
-  background: hsla(238, 100%, 71%, 1);
-	background: linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
-	background: -moz-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
-	background: -webkit-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#696EFF", endColorstr="#F8ACFF", GradientType=1);
-  color: #f8f4f4; 
+  padding-top: 200px + 1rem;
+  min-height: 100vh;
+  background: linear-gradient(to right, hsla(238, 100%, 71%, 1), hsla(295, 100%, 84%, 1)); 
+  color: #f8f4f4;
   font-family: sans-serif;
   margin: 0;
-  transition: background-color 0.5s ease; 
-
+  transition: background-color 0.5s ease;
 }
 
 .night-mode {
   background-color: #11001c;
-  color: #e3e92c81;
+  color: #0b0b0b;
 }
 
 nav {
@@ -73,12 +69,9 @@ nav {
   width: 100%;
   height: 200px;
   position: fixed;
-  padding: 1rem 2rem; 
+  padding: 1rem 2rem;
   background: rgb(30, 2, 66);
-	
-  box-shadow: 0 5px 10px -5px rgb(236, 244, 12);
-  -moz-box-shadow: 0 5px 10px -5px rgba(245, 214, 15, 0.85);
-  -webkit-box-shadow: 0 5px 10px -5px rgba(234, 245, 15, 0.85);
+  box-shadow: 0 5px 10px -5px rgba(236, 244, 12, 0.85);
 }
 
 .logo {
@@ -98,8 +91,9 @@ nav {
   margin: 0;
   padding: 0.5rem 1rem;
   font-size: 0.8rem;
-  width: 50px;
-  height: 50px;
+  font-weight: 900;
+  width: 70px;
+  height: 70px;
   cursor: pointer;
   border-radius: 50%;
   filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
@@ -163,7 +157,6 @@ nav {
 }
 
 #focused-breathing {
-
   background-color: var(--primary-color);
   width: var(--small);
   height: var(--small);
@@ -181,6 +174,17 @@ nav {
 }
 
 #exit-breathing-button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #683ae668;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-top: 40px;
+  
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -191,7 +195,9 @@ nav {
   cursor: pointer;
   border: none;
   border-radius: 5px; 
-  color: #ffffff; 
+  border: 2px solid #e8e354; 
+  color: #ffffff;
+  background-color: transparent;
   transition: all 0.2s ease;
   text-align: center; 
 	height: 7%;
@@ -203,7 +209,8 @@ nav {
 }
 
 #exit-breathing-button:hover {
-  background-color: #1374ca; 
+  background-color: #646cff; 
+  border-color: #fff264;
 }
 
 .landing-container, .quote-container {
@@ -212,132 +219,117 @@ nav {
   align-items: center;
   justify-content: center;
   margin-top: calc(200px + 1rem); 
-  min-height: calc(100vh - 200px);
- 
+  min-height: calc(100vh - 200px);  /* Keep min-height for flexibility */
   margin: 0 auto; 
+  flex: 1;
 }
 
 #thich-quote, #quote {
-  width: 510px;
-  height: 510px;
-	display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 510px;  
+  display: flex;
   font-size: 20px;  
   padding: 60px;
   word-spacing: 5px;
   letter-spacing: 2px;
   line-height: 2;
-  overflow-y: auto;
   overflow-wrap: break-word;
   font-family: "Walter Turncoat", cursive;
   filter: drop-shadow(20px 20px 10px rgba(66, 60, 235, 0.686));
-	scrollbar-color: rgba(23, 6, 29, 0.062) #656cee66;
+  scrollbar-color: rgba(23, 6, 29, 0.062) #656cee66;
   scrollbar-width: thin;
   box-shadow: -1px 2px 2px 0px #555, inset 0 0 10px 0 #555;
   border-radius: 10px;
   border: #656beec5 solid 10px;
 }
 
-#support-button {
-	margin: 15px auto; 
-  width: 65%;
-	height: 3em;
-  padding: 10px 20px; 
-  font-size: 16px; 
+#support-button, #next, #other, #home {
+  font-weight: 600;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
   cursor: pointer;
-  border-radius: 5px; 
-  background-color: #d3e0e9; 
-	color: #ffffffc6; 
-  transition: all 0.2s ease; 
-	border: 1px solid rgba(0, 0, 0, 0.447);
-	border-radius: 10px;
-	
+  border-radius: 5px;
+  border: 2px solid #e8e354; 
+  color: #ffffff;
+  background-color: transparent;
+  width: auto;  /* No need for fixed width here */
+  flex: 1;
+  gap: 10px;
 }
 
 #support-button:hover {
-  background-color: #e8f0ff; 
+  background-image: linear-gradient(to right, #ff9f9f, #8b69c4); 
 }
 
 .choice-container {
-	display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;  
+  position: relative; 
+  width: 60%;
+  height: 300px; 
+  padding-top: calc(var(200px) + 20px); 
+  margin: 0 auto;
+}
+
+.choice-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-height: 800px;  
-	margin-top: 300px;
-  padding-top: calc(var(--nav-height) + 20px); 
+  height: 100%;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, transparent 0%, #432199 100%); 
 }
 
-.support-options-section {
-	display: flex;
-	flex-direction: column;
-  flex-wrap: wrap; 
+#comparison, #impostor-syndrome, #acceptance, #self-love {
+  position: absolute; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  margin: 50px auto; 
-}
-
-button {
-	margin: 10px 20px; 
-  padding: 15px 30px; 
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center; 
-  border: none; 
-  border-radius: 50%; 
-  background-color: #d3e0e9; 
-  color: #ffffffc6; 
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;  
+  font-weight: 900;
+  font-family: Arial, sans-serif; 
   cursor: pointer;
-	width: 15em;
-	height: 15em;
-	word-spacing: 5px;
-	letter-spacing: 2px;
-	filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
-	background: hsla(238, 100%, 71%, 1);
-	background: linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
-	background: -moz-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
-	background: -webkit-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#696EFF", endColorstr="#F8ACFF", GradientType=1);
-  transition: all 0.2s ease; 
+  border-radius: 5px;
+  transition: 0.3s ease-in-out; 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+  background: transparent;
+  border: 2px solid #e8e354; 
+  color: #ffffff;
+  
+  &:hover {
+    background-color: #54e8d281; 
+    color: #000000;  
+  }
+}
+#comparison {
+  top: 20%; 
+  left: 20%;
 }
 
-button:hover {
-  background-color: #e8f0ff; 
+#impostor-syndrome {
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);  
 }
 
-
-
-
-
-.next-other-home {
-	display: flex;
-  flex-direction: row;
-  justify-content: center; 
-  align-items: center;
-  margin-top: 50px; 
-	gap: 0.5em;
+#acceptance {
+  top: 64%; 
+  left: 83%;
 }
 
-#next, #other, #home {
-	display: flex; 
-  justify-content: center; 
-  align-items: center; 
-	margin: 0; 
-	width: 11em;
-	height: 3em;
-	cursor: pointer;
-	border: 1px solid rgba(0, 0, 0, 0.447);
-	border-radius: 20px;
-	font-size: 1rem;
-	padding: 10px 20px;
-  border: 1px solid rgba(0, 0, 0, 0.3); 
-  background-color: #d3e0e9; 
-  color: #ffffffc6; 
-  transition: all 0.2s ease; 
+#self-love {
+  top: 50%; 
+  right: 20%;
 }
 
 #next:hover, #other:hover, #home:hover {

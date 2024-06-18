@@ -1,7 +1,7 @@
 
 ![Image 1](assets/images/quote.png)
 ![Image 2](assets/images/support.png)
-![Image 3](assets/images/breathing.png)
+![Image 3](assets/images/logo.png)
 
 # `Returning Home App`
 ***
@@ -45,6 +45,7 @@ The returning home app offers:
 
 ##### `Attributions Links`
 
+- [x] [BrandCrowd](https://www.brandcrowd.com/) <br />
 - [x] [coolors.co](https://coolors.co/gradients) <br />
 - [x] [CSS Breathing Animation](https://dev.to/scrabill/focused-breathing-a-css-animation-to-help-with-meditation-and-focused-breathing-exercises-dob) <br />
 - [x] [CSS3 Clouds](https://lauryndbrown.github.io/2017/06/08/creating-clouds-in-css.html) <br />
