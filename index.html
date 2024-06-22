@@ -9,57 +9,51 @@
 	<link href="./css/style.css" rel="stylesheet">
 	<link href="./assets/favicon.ico" id="favicon" rel="icon" sizes="32x32" type="image/png">
 	<script type="module" src="./js/app.js">
-		const choiceContainer = document.querySelector('.choice-container');
-		const navbarHeight = document.querySelector('nav').offsetHeight; 
-		const availableHeight = window.innerHeight - navbarHeight; 
-		const contentHeight = choiceContainer.scrollHeight; 
-		const paddingTop = Math.max(0, (availableHeight - contentHeight) / 2); 
-		choiceContainer.style.paddingTop = `${paddingTop}px`;
 	</script>
 	<title>Returning Home</title>
 </head>
 <body>
-	<nav>
-		<div class="logo">
-			<img src="assets/images/logo.png" alt="">
-		</div>
-    <button id="day-night-mode">Day Mode</button> 
-    <img alt="Meditation" class="meditation" height="303" src="https://live.staticflickr.com/65535/52808288106_cb53234a32_w.jpg" width="400">
-	</nav>
-	<div class="main-content">
-	<div id="breathing-container">
-		<div id="focused-breathing"></div>
-		<button id="exit-breathing-button">exit focused breathing</button>
-	</div>
-	<section class="landing-container">
-		<p id="thich-quote">
-			"Breathing in,<br>
-			I know this is my in-breath,<br>
-			breathing out,<br>
-			I know this is my out-breath,<br>
-			breathing in,<br>
-			I know I am breathing in,<br>
-			breathing out,<br>
-			I know I am breathing out."
-		</p>
-			<div class="button-container">
-				<button id="support-button">Today, I notice needing support with ...</button>
-			</div>
-		</section>
-		<section class="choice-container">
-			<button id="comparison">Comparison</button> 
-			<button id="impostor-syndrome">Impostor Syndrome</button>
-			<button id="acceptance">Acceptance</button> 
-			<button id="self-love">Self 🤍 Love</button>
-		</section>
-		<section class="quote-container">
-			<p id="quote"></p>
-			<div class="button-container">
-				<button id="next">Next</button> 
-        <button id="other">Other Category</button> 
-        <button id="home">Home 🦋</button>
-			</div>
-		</section>
-	</div>
+  <nav>
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="logo">
+    </div>
+    <button id="day-night-mode">Day Mode</button>
+    <img class="meditation" src="https://live.staticflickr.com/65535/52808288106_cb53234a32_w.jpg" alt="Meditation" height="303" width="400">
+  </nav>
+  <main class="main-content">
+    <div id="breathing-container">
+      <div id="focused-breathing"></div>
+      <button id="exit-breathing-button">Exit Focused Breathing</button>
+    </div>
+    <section class="landing-container">
+      <p id="thich-quote">
+        “Breathing in, <br>
+        I know this is my in-breath, <br>
+        breathing out, <br>
+        I know this is my out-breath, <br>
+        breathing in, <br>
+        I know I am breathing in, <br>
+        breathing out, <br>
+        I know I am breathing out.”
+      </p>
+      <div class="button-container">
+        <button id="support-button">Today, I notice needing support with ...</button>
+      </div>
+    </section>
+    <section class="choice-container">
+      <button id="comparison">Comparison</button>
+      <button id="impostor-syndrome">Impostor Syndrome</button>
+      <button id="acceptance">Acceptance</button>
+      <button id="self-love">Self Love</button>
+    </section>
+    <section class="quote-container">
+      <p id="quote"></p>
+      <div class="button-container">
+        <button id="next">Next</button>
+        <button id="other">Other Category</button>
+        <button id="home">Home </button>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
