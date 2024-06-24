@@ -29,10 +29,6 @@
   }
 }
 
-html {
-  box-sizing: border-box
-}
-
 * {
 	box-sizing: border-box;
 }
@@ -45,7 +41,10 @@ html {
 	--small: 30px;
 }
 
-body {
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
   background: hsla(177, 87%, 79%, 1);
   background: linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
   background: -moz-linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
@@ -75,12 +74,17 @@ body {
 }
 
 nav {
+  top: 0;
+  width: 100%;
   height: 75px;
   display: flex;
-  align-items: center;
+  position: fixed;
   justify-content: space-between;
-  padding: 0 50px;
   margin-bottom: 40px;
+  padding: 7px 14px;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 0px 5px 10px -5px rgba(15, 195, 245, 0.85);
 }
 
 nav > * { margin-bottom: 1rem; }
@@ -102,11 +106,15 @@ nav > * { margin-bottom: 1rem; }
 }
 
 .logo img {
-  margin-top: 30px;
-  width: 120px;
+  margin-top: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
+  background: rgba(17, 5, 96, 0.42);
 }
 
-#day-night-mode {
+#day-night-mode{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,7 +165,8 @@ nav > * { margin-bottom: 1rem; }
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 40%;
+  height: 60px;
   border-radius: 8px;
   padding: 0.6em 1.2em;
   font-size: 1em;
@@ -165,7 +174,7 @@ nav > * { margin-bottom: 1rem; }
   cursor: pointer;
   text-align: center;
   position: fixed;
-  margin: 0 auto;
+  margin-top: 10px;
   bottom: 10px; 
   left: 10px;
   border: 2px solid #e8e354;
@@ -261,19 +270,20 @@ nav > * { margin-bottom: 1rem; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 800px;
+  height: 600px;
   width: 100%;
 }
 
 #comparison, #impostor-syndrome, #acceptance, #self-love {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 8px;
   padding: 30px;
   width: 45%;
-  height: auto;
+  height: 60px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;  
