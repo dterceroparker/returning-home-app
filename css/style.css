@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-
 @media only screen and (max-width: 768px) {
   body {
     height: auto;  
@@ -54,7 +52,7 @@ body {
   background: -webkit-linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BF8F4", endColorstr="#6F7BF7", GradientType=1 );
   font-family: "Teachers", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     margin: 0;
 
 }
@@ -109,6 +107,9 @@ nav > * { margin-bottom: 1rem; }
 }
 
 #day-night-mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
   font-size: 0.8rem;
   font-weight: 900;
@@ -183,7 +184,8 @@ nav > * { margin-bottom: 1rem; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-height: calc(100vh - 95px);
+  width: 100%;
+  min-height: 800px;
   margin: 0 auto; 
 }
 
@@ -199,12 +201,12 @@ nav > * { margin-bottom: 1rem; }
   max-height: 700px;
   max-width: 1000px;  
   font-size: 20px;  
-  font-weight: 900;
   word-spacing: 5px;
   letter-spacing: 2px;
   line-height: normal;
   overflow-wrap: break-word;
-  font-family: "Walter Turncoat", cursive;
+  font-family: "Teachers", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   filter: drop-shadow(20px 20px 10px rgba(66, 60, 235, 0.506));
   scrollbar-color: rgba(23, 6, 29, 0.062) #656cee54;
   scrollbar-width: thin;
@@ -220,6 +222,9 @@ nav > * { margin-bottom: 1rem; }
 }
 
 #support-button, #next, #other, #home {
+  display: flex;
+  flex-basis: 150px;
+  gap: 30px;
   font-weight: 600;
   padding: 15px 32px;
   text-align: center;
@@ -232,8 +237,13 @@ nav > * { margin-bottom: 1rem; }
   background-color: transparent;
   color: #ffffff;
   width: auto;  
-  flex: 1;
-  gap: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  #support-button, #next, #other, #home {
+    width: 100%; 
+    font-size: 0.8em;
+  }
 }
 
 #support-button:hover {
