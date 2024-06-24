@@ -222,7 +222,7 @@ nav > * { margin-bottom: 1rem; }
 }
 
 #support-button, #next, #other, #home {
-  display: flex;
+  margin-top: 8px;
   flex-basis: 150px;
   gap: 30px;
   font-weight: 600;
