@@ -107,8 +107,8 @@ nav > * { margin-bottom: 1rem; }
 
 .logo img {
   margin-top: 20px;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
   background: rgba(17, 5, 96, 0.42);
@@ -129,7 +129,6 @@ nav > * { margin-bottom: 1rem; }
   filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
   background: linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
 }
-
 
 #breathing-container {
   margin-top: 100px;

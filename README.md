@@ -1,12 +1,12 @@
 
 ![Image 1](assets/images/quote.png)
-![Image 3](assets/images/logo.png)
+![Image 2](assets/images/logo.png)
 
 # `Returning Home App`
 ***
 
 
-#### [Returning Home App Link](https://returning-home-app.netlify.app)
+### [Returning Home App Link](https://returning-home-app.netlify.app)
 ---
 #### `Description`
 ##### A bootcamp experience inevitably leads us to experience the emotional cycle of change. The combination of facing the "valley of despair" stage whilst the insidious imposter syndrome voice gets louder--all while attempting to learn a completely new language--can make us feel alone in the fog. When faced with doubt, fear, and the strong urge to give up; understanding, support and wisdom can help us embrace and trust the journey. As Buddhist monk Thích Nhất Hạnh says, it is with the breath that we return home to ourselves and to the present moment. 
