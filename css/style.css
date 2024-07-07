@@ -4,21 +4,37 @@
   padding: 0;
 }
 
+/* :root {
+  --timing: 8s;
+  --primary-color: rgba(49, 126, 227, 0.489);
+  --secondary-color: rgba(209, 195, 234, 0.469);
+  --large: 300px;
+  --small: 30px;
+} */
+
 :root {
   --timing: 8s;
   --primary-color: rgba(49, 126, 227, 0.489);
   --secondary-color: rgba(209, 195, 234, 0.469);
   --large: 300px;
   --small: 30px;
+  --bg-gradient-day: linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
+  --bg-gradient-night: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+  --btn-hover-bg: #646cff78;
+  --btn-hover-border: #fff264;
+  --btn-hover-color: #000;
+  --text-color-day: #000;
+  --text-color-night: #fff;
 }
 
 html, body {
-  margin: 0;
+  /* margin: 0; */
   height: 100%;
   /* overflow: hidden; */
   /* box-sizing: border-box; */
   background: linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
   font-family: "Teachers", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  transition: background 0.3s ease;
 }
 
 /* .page-container {
@@ -38,7 +54,8 @@ html, body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  min-height: 100vh; /* Ensure full viewport height */
+  min-height: 100vh;
+  clip-path: inset(75px 0 0 0);
 }
 
 .night-mode {
@@ -128,6 +145,7 @@ nav > * {
   font-weight: 600;
   cursor: pointer;
   background: linear-gradient(90deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
+  transition: background 0.3s ease;
 }
 
 .section {
@@ -139,7 +157,6 @@ nav > * {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 
 #breathing-container {
   margin-top: 100px;
@@ -167,32 +184,26 @@ nav > * {
 }
 
 #exit-breathing-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: calc(100% - 40px);
   height: 60px;
   border-radius: 8px;
   padding: 0.6em 1.2em;
   font-size: 16px;
   font-weight: 700;
-  font: inherit 700;
   cursor: pointer;
   text-align: center;
   position: fixed;
-  margin-top: 10px;
   bottom: 10px;
   left: 10px;
   border: 2px solid #e8e354;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   background-color: transparent;
   transition: all 0.2s ease;
 }
 
 #exit-breathing-button:hover {
-  background-color: #646cff78;
-  border-color: #fff264;
+  background-color: var(--btn-hover-bg);
+  border-color: var(--btn-hover-border);
+  color: var(--btn-hover-color);
 }
 
 .landing-container, .quote-container {
@@ -210,7 +221,6 @@ nav > * {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: auto;
   padding: 20px 40px;
   width: 100%;
   min-height: 600px;
@@ -220,13 +230,12 @@ nav > * {
   word-spacing: 5px;
   letter-spacing: 2px;
   line-height: normal;
-  overflow-wrap: break-word;
-  filter: drop-shadow(20px 20px 10px rgba(66, 60, 235, 0.506));
   scrollbar-color: rgba(23, 6, 29, 0.062) #656cee54;
   scrollbar-width: thin;
   box-shadow: -1px 2px 2px 0px #555, inset 0 0 10px 0 #555;
   border-radius: 10px;
   border: #656cee6b solid 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @media (max-width: 768px) {
@@ -234,30 +243,6 @@ nav > * {
     width: 100%;
   }
 }
-
-#support-button {
-  width: 100%; 
-  max-width: 400px; 
-  margin-top: 8px;
-  padding: 20px 32px; 
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-  border: 2px solid #e8e354;
-  background-color: transparent;
-  color: #ffffff;
-  border-radius: 10px;
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-  cursor: pointer;
-}
-
-#support-button:hover {
-  background-color: #646cff78;
-  border-color: #fff264;
-  color: #000000;
-}
-
 
 .button-container {
   display: flex;
@@ -291,9 +276,32 @@ nav > * {
   color: #000000;
 }
 
+#support-button {
+  width: 100%; 
+  max-width: 400px; 
+  margin-top: 15px;
+  padding: 20px 32px; 
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #e8e354;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+#support-button:hover {
+  background-color: #646cff78;
+  border-color: #fff264;
+  color: #000000;
+}
+
 #next, #other, #home {
-  height: 50px; /* Set a fixed height */
-  margin-top: 8px;
+  height: 50px; 
+  margin-top: 15px;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
@@ -310,11 +318,6 @@ nav > * {
   nav {
     height: auto;
   }
-}
-
-#support-button {
-  margin-top: 8px;
-  width: 100%;
 }
 
 #comparison, #impostor-syndrome, #acceptance, #self-love {
