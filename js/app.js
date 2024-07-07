@@ -9,7 +9,9 @@ let supportCategory = ""
 
 const riverSound = new Audio('../assets/audio/river.wav')
 // ------------------------------------------------------ //
-const dayNightBtn = document.getElementById("day-night-mode")
+const dayNightBtn = document.getElementById("day-night-mode");
+const modeIcon = document.getElementById("mode-icon")
+const modeText = document.getElementById("mode-text")
 
 const breathingContainer = document.getElementById("breathing-container")
 const breathingBtn = document.getElementById("exit-breathing-button")
@@ -31,17 +33,47 @@ const homeBtn = document.getElementById("home")
 
 const quoteText = document.getElementById("quote")
 // ------------------------------------------------------ //
+
+const modeIcons = {
+  day: "fa-toggle-on",
+  night: "fa-toggle-off"
+}
+
 let mode = "day"
-dayNightBtn.addEventListener("click", () => {
+
+const toggleMode = () => {
   document.body.classList.toggle("night-mode");
-	if (mode === "night") {
-		dayNightBtn.textContent = "Night Mode"
-		mode = "day"
-	} else {
-    dayNightBtn.textContent = "Day Mode"
-    mode = "night"
-	}
-})
+  if (mode === "day") {
+    modeIcon.classList.remove(modeIcons.day);
+    modeIcon.classList.add(modeIcons.night);
+    modeText.textContent = "Night Mode";
+    supportBtn.textContent = "Tonight, I need support with ...";
+    comparisonBtn.textContent = "Comparison";
+    impostorSyndromeBtn.textContent = "Impostor Syndrome";
+    acceptanceBtn.textContent = "Acceptance";
+    selfLoveBtn.textContent = "Self Love";
+    nextBtn.textContent = "Next";
+    otherBtn.textContent = "Other Category";
+    homeBtn.textContent = "Home";
+    mode = "night";
+  } else {
+    modeIcon.classList.remove(modeIcons.night)
+    modeIcon.classList.add(modeIcons.day)
+    modeText.textContent = "Day Mode"
+    supportBtn.textContent = "Today, I notice needing support with ..."
+    comparisonBtn.textContent = "Comparison"
+    impostorSyndromeBtn.textContent = "Impostor Syndrome"
+    acceptanceBtn.textContent = "Acceptance"
+    selfLoveBtn.textContent = "Self Love"
+    nextBtn.textContent = "Next"
+    otherBtn.textContent = "Other Category"
+    homeBtn.textContent = "Home"
+    mode = "day"
+  }
+}
+
+dayNightBtn.addEventListener("click", toggleMode);
+
 
 breathingBtn.addEventListener("click", reflectLandingContainer)
 

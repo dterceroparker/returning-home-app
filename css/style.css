@@ -1,44 +1,13 @@
-@media only screen and (max-width: 768px) {
-  body {
-    height: auto;  
-  }
-  nav {
-    height: fit-content;  
-  }
-  .landing-container, p {
-    width: 100%;  
-  }
-	.cloud, .meditation, #day-night-mode {
-    width: 50%;  
-  }
-  .cloud h1 {
-    font-size: 28px; 
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .cloud {
-    width: 120px;
-    height: 120px;
-  }
-  #breathing-container {
-    width: 80%;
-  }
-  .landing-container {
-    margin: 50px auto;
-  }
-}
-
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-	--timing: 8s;
-	--primary-color: rgba(49, 126, 227, 0.489);
-	--secondary-color: rgba(209, 195, 234, 0.469);
-	--large: 300px;
-	--small: 30px;
+  --timing: 8s;
+  --primary-color: rgba(49, 126, 227, 0.489);
+  --secondary-color: rgba(209, 195, 234, 0.469);
+  --large: 300px;
+  --small: 30px;
 }
 
 html, body {
@@ -46,13 +15,8 @@ html, body {
   height: 100%;
   overflow: hidden;
   box-sizing: border-box;
-  background: hsla(177, 87%, 79%, 1);
   background: linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
-  background: -moz-linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
-  background: -webkit-linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BF8F4", endColorstr="#6F7BF7", GradientType=1 );
-  font-family: "Teachers", -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Teachers", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 .page-container {
@@ -68,11 +32,7 @@ html, body {
 
 .night-mode {
   color: white;
-  background: hsla(221, 45%, 73%, 1);
   background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
-  background: -moz-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
-  background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1 );
 }
 
 nav {
@@ -87,28 +47,30 @@ nav {
   box-shadow: 0px 5px 10px -5px rgba(15, 195, 245, 0.85);
 }
 
-nav > * { margin-bottom: 1rem; }
+nav > * {
+  margin-bottom: 1rem;
+}
 
 @media screen and (max-width: 768px) {
   nav {
-    height: auto; 
+    height: auto;
   }
   #day-night-mode,
   .meditation {
     display: flex;
   }
   .logo {
-    flex-grow: 1; 
+    flex-grow: 1;
   }
-  nav > * { 
-    margin-bottom: 1rem; 
+  nav > * {
+    margin-bottom: 1rem;
   }
 }
 
 .logo img {
   margin-top: 20px;
-  width: 70px;
-  height: 70px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   filter: drop-shadow(20px 20px 10px rgba(18, 17, 18, 0.354));
   background: rgba(17, 5, 96, 0.42);
@@ -120,8 +82,8 @@ nav > * { margin-bottom: 1rem; }
   justify-content: center;
   margin-right: 20px;
   margin-top: 20px;
-  font-size: 0.8rem;
-  font-weight: 900;
+  font-size: 0.7rem;
+  font-weight: 600;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -145,7 +107,7 @@ nav > * { margin-bottom: 1rem; }
   width: var(--small);
   height: var(--small);
   border-radius: 50%;
-  animation: breath 8s ease infinite none running;
+  animation: breath var(--timing) ease infinite none running;
 }
 
 @keyframes breath {
@@ -166,18 +128,19 @@ nav > * { margin-bottom: 1rem; }
   height: 60px;
   border-radius: 8px;
   padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 16px;
+  font-weight: 700;
   font: inherit 700;
   cursor: pointer;
   text-align: center;
   position: fixed;
   margin-top: 10px;
-  bottom: 10px; 
+  bottom: 10px;
   left: 10px;
   border: 2px solid #e8e354;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   background-color: transparent;
-  transition: all 0.2s ease; 
+  transition: all 0.2s ease;
 }
 
 #exit-breathing-button:hover {
@@ -192,7 +155,7 @@ nav > * { margin-bottom: 1rem; }
   justify-content: center;
   width: 100%;
   min-height: 800px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 #thich-quote, #quote {
@@ -205,14 +168,12 @@ nav > * { margin-bottom: 1rem; }
   width: 100%;
   min-height: 600px;
   max-height: 700px;
-  max-width: 1000px;  
-  font-size: 20px;  
+  max-width: 1000px;
+  font-size: 20px;
   word-spacing: 5px;
   letter-spacing: 2px;
   line-height: normal;
   overflow-wrap: break-word;
-  font-family: "Teachers", -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   filter: drop-shadow(20px 20px 10px rgba(66, 60, 235, 0.506));
   scrollbar-color: rgba(23, 6, 29, 0.062) #656cee54;
   scrollbar-width: thin;
@@ -221,53 +182,91 @@ nav > * { margin-bottom: 1rem; }
   border: #656cee6b solid 10px;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   #thich-quote, #quote {
-    width: 100%;  
+    width: 100%;
   }
 }
 
-#support-button, #next, #other, #home {
+#support-button {
+  width: 100%; 
+  max-width: 400px; 
   margin-top: 8px;
-  flex-basis: 150px;
-  gap: 30px;
-  font-weight: 600;
-  padding: 15px 32px;
+  padding: 20px 32px; 
+  font-size: 16px;
+  font-weight: 700;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  border: 2px solid #e8e354; 
+  border: 2px solid #e8e354;
   background-color: transparent;
   color: #ffffff;
-  width: auto;  
-}
-
-@media only screen and (max-width: 768px) {
-  #support-button, #next, #other, #home {
-    width: 100%; 
-    font-size: 0.8em;
-  }
+  border-radius: 10px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
 }
 
 #support-button:hover {
-  background-image: linear-gradient(to right, #d4ed1900, #393fb0db); 
-}
-
-#next:hover, #other:hover, #home:hover {
   background-color: #646cff78;
   border-color: #fff264;
   color: #000000;
 }
-  
-.choice-container {
+
+
+.button-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 600px;
+  align-items: center; 
+  justify-content: center; 
+  gap: 10px; 
+}
+
+.button-container button {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #e8e354;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  width: 100%; 
+  max-width: 200px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.button-container button:hover {
+  background-color: #646cff78;
+  border-color: #fff264;
+  color: #000000;
+}
+
+#next, #other, #home {
+  height: 50px; /* Set a fixed height */
+  margin-top: 8px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  #next, #other, #home {
+    flex-basis: auto; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    height: auto;
+  }
+}
+
+#support-button {
+  margin-top: 8px;
   width: 100%;
 }
 
@@ -279,21 +278,19 @@ nav > * { margin-bottom: 1rem; }
   flex-wrap: wrap;
   margin-top: 8px;
   padding: 30px;
-  width: 45%;
+  width: 90%;
   height: 60px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;  
+  font-size: 16px;
   font-weight: 700;
-  cursor: pointer;
   border-radius: 10px;
-  transition: 0.3s ease-in-out; 
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   background: transparent;
-  border: 2px solid #e8e354; 
+  border: 2px solid #e8e354;
   color: #ffffff;
-  &:hover {
-    background-color: #54e8d281; 
-    color: #000000;  
-  }
+}
+
+#comparison:hover, #impostor-syndrome:hover, #acceptance:hover, #self-love:hover {
+  background-color: #54e8d281;
+  color: #000000;
 }
