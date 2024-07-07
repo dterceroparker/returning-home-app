@@ -42,21 +42,27 @@ const modeIcons = {
 let mode = "day"
 
 const toggleMode = () => {
-  document.body.classList.toggle("night-mode");
+  if (!modeIcon || !modeText || !supportBtn) {
+    return
+  }
+
+  document.body.classList.toggle("night-mode")
   if (mode === "day") {
-    modeIcon.classList.remove(modeIcons.day);
-    modeIcon.classList.add(modeIcons.night);
+    // console.log("Switching to night mode...")
+    modeIcon.classList.remove(modeIcons.day)
+    modeIcon.classList.add(modeIcons.night)
     modeText.textContent = "Night Mode";
-    supportBtn.textContent = "Tonight, I need support with ...";
-    comparisonBtn.textContent = "Comparison";
-    impostorSyndromeBtn.textContent = "Impostor Syndrome";
-    acceptanceBtn.textContent = "Acceptance";
-    selfLoveBtn.textContent = "Self Love";
-    nextBtn.textContent = "Next";
-    otherBtn.textContent = "Other Category";
-    homeBtn.textContent = "Home";
-    mode = "night";
+    supportBtn.textContent = "Tonight, I need support with ..."
+    comparisonBtn.textContent = "Comparison"
+    impostorSyndromeBtn.textContent = "Impostor Syndrome"
+    acceptanceBtn.textContent = "Acceptance"
+    selfLoveBtn.textContent = "Self Love"
+    nextBtn.textContent = "Next"
+    otherBtn.textContent = "Other Category"
+    homeBtn.textContent = "Home"
+    mode = "night"
   } else {
+    // console.log("Switching to day mode...")
     modeIcon.classList.remove(modeIcons.night)
     modeIcon.classList.add(modeIcons.day)
     modeText.textContent = "Day Mode"
@@ -73,7 +79,6 @@ const toggleMode = () => {
 }
 
 dayNightBtn.addEventListener("click", toggleMode);
-
 
 breathingBtn.addEventListener("click", reflectLandingContainer)
 

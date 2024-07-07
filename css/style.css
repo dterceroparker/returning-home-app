@@ -163,20 +163,21 @@ nav > * {
   padding: 0.6em 1.2em;
   font-size: 16px;
   font-weight: 700;
+  color: #6b8e23; 
   cursor: pointer;
   text-align: center;
   position: fixed;
   bottom: 10px;
   left: 10px;
-  border: 2px solid #e8e354;
+  border: 2px solid #d3d3d3; 
   background-color: transparent;
   transition: all 0.2s ease;
 }
 
 #exit-breathing-button:hover {
-  background-color: var(--btn-hover-bg);
-  border-color: var(--btn-hover-border);
-  color: var(--btn-hover-color);
+  background-color: #d3d3d3; 
+  color: #2f4f4f; 
+  border-color: #a9a9a9; 
 }
 
 .landing-container, .quote-container {
