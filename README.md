@@ -1,5 +1,5 @@
 
-![Image 1](assets/images/quote.png)
+![Image 1](assets/images/wisdom.png)
 ![Image 2](assets/images/logo.png)
 
 # `Returning Home App`
