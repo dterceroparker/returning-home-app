@@ -35,7 +35,6 @@ html, body {
   padding: 20px;
   min-height: calc(100vh - 75px);
   box-sizing: border-box;
-  clip-path: inset(75px 0 0 0);
 }
 
 .night-mode {
@@ -140,10 +139,12 @@ nav > * {
   text-align: center;
   position: fixed;
   bottom: 10px;
-  left: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   border: 2px solid #fbf5f59f;
   background-color: transparent;
   transition: all 0.2s ease;
+  z-index: 1001;
 }
 
 #exit-breathing-button:hover {
@@ -158,7 +159,6 @@ nav > * {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh; /* Ensure the container fills the viewport */
   margin: 0 auto;
   overflow: hidden;
   padding: 20px;
@@ -168,11 +168,13 @@ nav > * {
 #thich-quote, #quote {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align content to the top */
+  justify-content: center;
   align-items: center;
   padding: 20px 40px;
-  width: 80%; /* Adjust width as needed */
-  height: 80%; /* Adjust height as needed */
+  width: 100%;
+  min-height: 600px;
+  max-height: 90vh;
+  max-width: 1000px;
   font-size: 20px;
   word-spacing: 5px;
   letter-spacing: 2px;
@@ -183,15 +185,10 @@ nav > * {
   border-radius: 10px;
   border: #656cee6b solid 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
-  overflow-y: auto; /* Enable vertical scrolling */
+  overflow: auto;
   box-sizing: border-box;
   white-space: pre-wrap;
   word-break: break-word;
-  position: fixed; /* Make the container fixed */
-  top: 10%; /* Adjust top position as needed */
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.9); /* Optional: Add a background to improve readability */
 }
 
 @media (max-width: 768px) {
