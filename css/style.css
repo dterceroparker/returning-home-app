@@ -159,7 +159,6 @@ nav > * {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 20px;
   margin: 0 auto;
   overflow: hidden;
   padding: 20px;
@@ -171,6 +170,7 @@ nav > * {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 20px;
   padding: 20px 40px;
   width: 100%;
   min-height: 300px;
@@ -315,6 +315,22 @@ nav > * {
   background-color: var(--btn-hover-bg);
   border-color: var(--btn-hover-border);
   color: var(--btn-hover-color);
+}
+
+@media (max-width: 768px) {
+  #comparison, #impostor-syndrome, #acceptance, #self-love {
+    height: 100px;
+    padding: 0.4rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #comparison, #impostor-syndrome, #acceptance, #self-love {
+    height: 80px;
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+  }
 }
 
 .night-mode #thich-quote, .night-mode #quote {
