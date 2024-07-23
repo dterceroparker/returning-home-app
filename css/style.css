@@ -158,9 +158,10 @@ nav > * {
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 800px;
   margin: 0 auto;
   overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 #thich-quote, #quote {
@@ -171,7 +172,7 @@ nav > * {
   padding: 20px 40px;
   width: 100%;
   min-height: 600px;
-  max-height: 700px;
+  max-height: 90vh;
   max-width: 1000px;
   font-size: 20px;
   word-spacing: 5px;
