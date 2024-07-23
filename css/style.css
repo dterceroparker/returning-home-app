@@ -168,12 +168,12 @@ nav > * {
 #thich-quote, #quote {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 20px 40px;
   width: 100%;
   min-height: 600px;
-  max-height: 90vh;
+  max-height: 700px;
   max-width: 1000px;
   font-size: 20px;
   word-spacing: 5px;
@@ -185,7 +185,7 @@ nav > * {
   border-radius: 10px;
   border: #656cee6b solid 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
-  overflow: auto;
+  overflow-y: auto;
   box-sizing: border-box;
   white-space: pre-wrap;
   word-break: break-word;
@@ -258,7 +258,7 @@ nav > * {
   margin-top: 15px;
   padding: 20px 32px; 
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   text-decoration: none;
   border: 2px solid #e8e354;
