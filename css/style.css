@@ -153,6 +153,22 @@ nav > * {
   border-color: #fffdfd;
 }
 
+@media (max-width: 768px) {
+  #exit-breathing-button {
+    height: 50px;
+    padding: 0.5em 1em;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #exit-breathing-button {
+    height: 45px;
+    padding: 0.4em 0.8em;
+    font-size: 12px;
+  }
+}
+
 .landing-container, .quote-container {
   display: flex;
   flex-direction: column;
@@ -171,7 +187,7 @@ nav > * {
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 20px;
-  padding: 20px 40px;
+  padding: 20px 20px;
   width: 100%;
   min-height: 300px;
   max-height: 500px;
@@ -200,13 +216,14 @@ nav > * {
 @media (max-width: 768px) {
   #thich-quote, #quote {
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 20px 10px;
   }
 }
 
 @media (max-width: 480px) {
   #thich-quote, #quote {
     padding-top: 20px;
+    padding: 20px 5px;
     font-size: 14px;
   }
 }
