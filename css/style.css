@@ -275,6 +275,20 @@ nav > * {
   color: #000000;
 }
 
+@media (max-width: 768px) {
+  #support-button {
+    padding: 15px 25px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #support-button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
+
 #next, #other, #home {
   height: 50px; 
   margin-top: 15px;
