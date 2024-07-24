@@ -187,7 +187,7 @@ nav > * {
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 20px;
-  padding: 20px 20px;
+  padding: 20px;
   width: 100%;
   min-height: 300px;
   max-height: 500px;
@@ -231,8 +231,22 @@ nav > * {
 @media (max-width: 480px) {
   #thich-quote {
     padding-top: 20px;
-    font-size: 14px;
-    padding: 20px 0;
+    font-size: 12px;
+    padding: 5px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .night-mode #thich-quote, .night-mode #quote {
+    font-size: 16px;
+    padding: 20px 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .night-mode #thich-quote {
+    font-size: 12px;
+    padding: 5px 0px; 
   }
 }
 
