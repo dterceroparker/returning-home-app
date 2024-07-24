@@ -66,7 +66,7 @@ const toggleMode = () => {
     modeIcon.classList.remove(modeIcons.night)
     modeIcon.classList.add(modeIcons.day)
     modeText.textContent = "Day Mode"
-    supportBtn.textContent = "Today, I notice needing support with ..."
+    supportBtn.textContent = "Today, I need support with ..."
     comparisonBtn.textContent = "Comparison"
     impostorSyndromeBtn.textContent = "Impostor Syndrome"
     acceptanceBtn.textContent = "Acceptance"

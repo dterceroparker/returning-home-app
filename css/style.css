@@ -260,7 +260,7 @@ nav > * {
   #quote {
     padding: 20px 5px;
     font-size: 14px;
-    max-height: 300px;
+    height: 400px;
   }
 }
 
@@ -268,6 +268,7 @@ nav > * {
   #thich-quote {
     font-size: 12px;
     padding: 20px 0;
+    height: 400px;
   }
 }
 
@@ -282,6 +283,7 @@ nav > * {
   .night-mode #thich-quote {
     font-size: 12px;
     padding: 20px 0; 
+    height: 400px;
   }
 }
 
@@ -448,6 +450,7 @@ nav > * {
     padding: 10px;
     font-size: 14px; 
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(0, 0, 0, 0.3);
+    height: 400px;
   }
 }
 
