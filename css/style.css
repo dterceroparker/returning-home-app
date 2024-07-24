@@ -92,6 +92,42 @@ nav > * {
   transition: background 0.3s ease;
 }
 
+@media (max-width: 768px) {
+  nav {
+    height: 60px; 
+    padding: 0 15px; 
+  }
+
+  .logo img {
+    width: 60px; 
+    height: 60px; 
+  }
+
+  #day-night-mode {
+    width: 50px; 
+    height: 50px; 
+    font-size: 0.7rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    height: 50px; 
+    padding: 0 10px; 
+  }
+
+  .logo img {
+    width: 50px; 
+    height: 50px; 
+  }
+
+  #day-night-mode {
+    width: 40px; 
+    height: 40px; 
+    font-size: 0.6rem; 
+  }
+}
+
 .section {
   width: 100%;
   max-width: 1200px;
@@ -224,6 +260,7 @@ nav > * {
   #quote {
     padding: 20px 5px;
     font-size: 14px;
+    max-height: 300px;
   }
 }
 
