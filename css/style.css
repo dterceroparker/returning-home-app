@@ -221,10 +221,18 @@ nav > * {
 }
 
 @media (max-width: 480px) {
-  #thich-quote, #quote {
+  #quote {
     padding-top: 20px;
     padding: 20px 5px;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #thich-quote {
+    padding-top: 20px;
+    font-size: 14px;
+    padding: 20px 0;
   }
 }
 
