@@ -169,7 +169,7 @@ nav > * {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 20px;
   padding: 20px 40px;
   width: 100%;
@@ -190,6 +190,11 @@ nav > * {
   box-sizing: border-box;
   white-space: pre-wrap;
   word-break: break-word;
+}
+
+#thich-quote:hover, #quote:hover {
+  border-color: #4bd4e6;
+  color: #333333;
 }
 
 @media (max-width: 768px) {
