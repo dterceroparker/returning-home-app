@@ -222,7 +222,6 @@ nav > * {
 
 @media (max-width: 480px) {
   #quote {
-    padding-top: 20px;
     padding: 20px 5px;
     font-size: 14px;
   }
@@ -230,9 +229,8 @@ nav > * {
 
 @media (max-width: 480px) {
   #thich-quote {
-    padding-top: 20px;
     font-size: 12px;
-    padding: 5px 0;
+    padding: 20px 0;
   }
 }
 
@@ -246,7 +244,7 @@ nav > * {
 @media (max-width: 480px) {
   .night-mode #thich-quote {
     font-size: 12px;
-    padding: 5px 0px; 
+    padding: 20px 0; 
   }
 }
 
@@ -399,6 +397,21 @@ nav > * {
   transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 12px;
   padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .night-mode #thich-quote, .night-mode #quote {
+    padding: 15px; 
+    font-size: 16px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .night-mode #thich-quote, .night-mode #quote {
+    padding: 10px;
+    font-size: 14px; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .night-mode .button-container button, .night-mode #support-button {
